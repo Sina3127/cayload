@@ -1,0 +1,1460 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="zxx">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>cayload</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/favicon.svg">
+   <!-- CSS here -->
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="assets/css/swiper.min.css">
+   <link rel="stylesheet" href="assets/css/slick.css">
+   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/css/fontawesome-pro.css">
+   <link rel="stylesheet" href="assets/css/icomoon.css">
+   <link rel="stylesheet" href="assets/css/spacing.css">
+   <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
+   <link rel="stylesheet" href="assets/css/nice-select.css">
+   <link rel="stylesheet" href="assets/css/nouislider.min.css">
+   <link rel="stylesheet" href="assets/css/nouislider.pips.css">
+   <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+   <!-- preloader start -->
+   <div id="preloader">
+      <div class="vw-loader-inner">
+         <div class="vw-loader">
+            <span class="vw-loader-item"></span>
+            <span class="vw-loader-item"></span>
+            <span class="vw-loader-item"></span>
+            <span class="vw-loader-item"></span>
+            <span class="vw-loader-item"></span>
+            <span class="vw-loader-item"></span>
+            <span class="vw-loader-item"></span>
+            <span class="vw-loader-item"></span>
+         </div>
+      </div>
+   </div>
+   <!-- preloader start -->
+
+
+   <!-- Back to top start -->
+   <div class="backtotop-wrap cursor-pointer">
+      <svg class="backtotop-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <!-- Back to top end -->
+
+   <!-- search area start -->
+   <div class="vw-search-area">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-12">
+               <div class="vw-search-form">
+                  <div class="vw-search-close text-center mb-20">
+                     <button class="vw-search-close-btn vw-search-close-btn"></button>
+                  </div>
+                  <form action="#">
+                     <div class="vw-search-input mb-10">
+                        <input type="text" placeholder="Search for product...">
+                        <button type="submit"><i class="flaticon-search-1"></i></button>
+                     </div>
+                     <div class="vw-search-category">
+                        <span>Search by : </span>
+                        <a href="#">Agency, </a>
+                        <a href="#">Artist Portfolio, </a>
+                        <a href="#">Branding, </a>
+                        <a href="#">creative portfolio, </a>
+                        <a href="#">Design </a>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+   <!-- search area end -->
+
+   <!-- Offcanvas area start -->
+   <div class="fix">
+      <div class="offcanvas__info">
+         <div class="offcanvas__wrapper">
+            <div class="offcanvas__content">
+               <div class="offcanvas__top mb-10 d-flex justify-content-between align-items-center">
+                  <div class="offcanvas__logo">
+                     <a href="index.html">
+                        <img src="assets/imgs/logo/logo-white.svg" alt="Header Logo">
+                     </a>
+                  </div>
+                  <div class="offcanvas__close">
+                     <button>
+                        <i class="fal fa-times"></i>
+                     </button>
+                  </div>
+               </div>
+               <div class="offcanvas__search mb-25">
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum maxime accusamus corrupti natus obcaecati vitae dignissimos, id officiis similique eos.</p>
+               </div>
+               <div class="mobile-menu fix mb-40"></div>
+               <div class="offcanvas__contact mb-20">
+                  <h4>Contact Info</h4>
+                  <ul>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="fal fa-map-marker-alt"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a target="_blank"
+                              href="#">31 Park End St, Brockhampton, UK</a>
+                        </div>
+                     </li>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="far fa-phone"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a href="tel:+00112233665">+00112233665</a>
+                        </div>
+                     </li>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="fal fa-envelope"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a href="tel:+012-345-6789"><span class="mailto:support@example.com">support@example.com</span></a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="offcanvas__social">
+                  <ul>
+                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="offcanvas__overlay"></div>
+   <div class="offcanvas__overlay-white"></div>
+   <!-- Offcanvas area start -->
+
+   <!-- Header area start -->
+   <header class="header-three p-relative">
+      <div id="header-sticky" class="header-area">
+         <div class="header-box-main">
+            <div class="header-top pt-15 pb-15 bg-color-1">
+               <div class="container">
+                  <div class="header-info">
+                     <ul class="d-flex">
+                        <li><i class="icon-48"></i> 1901 Thornridge Cir. Shiloh, Hawaii 81063</li>
+                        <li><i class="icon-2"></i> sara.cruz@example.com</li>
+                        <li><i class="icon-3"></i> Mon - Fri  / 9:00AM - 11PM </li>
+                     </ul>
+                  </div>
+                  <div class="socials-info">
+                     <span>Social Network :</span>
+                     <ul class="d-flex">
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-dribbble"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="mega-menu-wrapper">
+                  <div class="header-main">
+                     <div class="header-left">
+                        <div class="header-logo">
+                           <a href="index.html">
+                           <img src="assets/imgs/logo/logo.svg" alt="header logo">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="header-middle">
+                        <div class="mean__menu-wrapper d-none d-lg-block">
+                           <div class="main-menu">
+                              <nav id="mobile-menu">
+                                 <ul>
+                                    <li class="has-dropdown active">
+                                       <a href="index.html">Home</a>
+                                       <ul class="submenu">
+                                          <li><a href="index.html">Home One</a></li>
+                                          <li><a href="index-2.html">Home Two</a></li>
+                                          <li><a href="index-3.html">Home Three</a></li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <a href="about.html">About</a>
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a href="services.html">Service</a>
+                                       <ul class="submenu">
+                                          <li><a href="services.html">Services One</a></li>
+                                          <li><a href="services-2.html">Services Two</a></li>
+                                          <li><a href="service-details.html">Service Details</a></li>
+                                       </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a href="projects.html">Projects</a>
+                                       <ul class="submenu">
+                                          <li><a href="projects.html">Projects</a></li>
+                                          <li><a href="project-details.html">Project Details</a></li>
+                                       </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a href="#">Pages</a>
+                                       <ul class="submenu">
+                                          <li><a href="team.html">Team</a></li>
+                                          <li><a href="team-details.html">Team Details</a></li>
+                                          <li><a href="testimonials.html">Testimonial</a></li>
+                                          <li><a href="price.html">Price</a></li>
+                                          <li><a href="faq.html">Faq's</a></li>
+                                          <li><a href="error.html">Error Page</a></li>
+                                       </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a href="blog-grid.html">Blog</a>
+                                       <ul class="submenu">
+                                          <li><a href="blog-list.html">Blog List</a></li>
+                                          <li><a href="blog-grid.html">Blog Grid</a></li>
+                                          <li><a href="blog-details.html">Blog Details</a></li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <a href="contact.html">Contact</a>
+                                    </li>
+                                 </ul>
+                              </nav>
+                              <!-- for wp -->
+                              <div class="header__hamburger ml-50 d-none">
+                                 <button type="button" class="hamburger-btn offcanvas-open-btn">
+                                 <span>01</span>
+                                 <span>01</span>
+                                 <span>01</span>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="header-right d-flex justify-content-end">
+                        <div class="header-action d-xl-inline-flex d-none gap-5">
+                           <div class="header-call-us-3">
+                              <div class="icon-box">
+                                 <svg width="53" height="54" viewBox="0 0 53 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M31.4058 6.85513C28.1145 4.82519 24.2144 3.70898 20.1855 3.70898C9.21848 3.70898 0 11.8798 0 22.3418C0 26.0099 1.1395 29.5262 3.30401 32.563L0.28032 42.056C-0.0391289 43.0588 0.711981 44.0801 1.76008 44.0801C1.99971 44.0801 2.24091 44.0247 2.46346 43.9115L11.659 39.236C12.0313 39.3963 12.4083 39.5455 12.7891 39.684C10.6601 36.3609 9.52344 32.5464 9.52344 28.5527C9.52344 16.6591 19.5311 7.51546 31.4058 6.85513Z" fill="#707070"/>
+                                    <path d="M49.696 38.774C51.8605 35.7371 53 32.2208 53 28.5527C53 18.0869 43.7776 9.91992 32.8145 9.91992C21.8474 9.91992 12.6289 18.0907 12.6289 28.5527C12.6289 39.0186 21.8513 47.1855 32.8145 47.1855C35.7561 47.1855 38.6871 46.5861 41.3405 45.4467L50.5365 50.1224C51.0946 50.4061 51.7687 50.3269 52.2458 49.9215C52.7229 49.516 52.9098 48.8636 52.7198 48.2671L49.696 38.774ZM26.5 30.1055C25.6425 30.1055 24.9473 29.4103 24.9473 28.5527C24.9473 27.6952 25.6425 27 26.5 27C27.3575 27 28.0527 27.6952 28.0527 28.5527C28.0527 29.4103 27.3575 30.1055 26.5 30.1055ZM32.7109 30.1055C31.8534 30.1055 31.1582 29.4103 31.1582 28.5527C31.1582 27.6952 31.8534 27 32.7109 27C33.5685 27 34.2637 27.6952 34.2637 28.5527C34.2637 29.4103 33.5685 30.1055 32.7109 30.1055ZM38.9219 30.1055C38.0644 30.1055 37.3691 29.4103 37.3691 28.5527C37.3691 27.6952 38.0644 27 38.9219 27C39.7794 27 40.4746 27.6952 40.4746 28.5527C40.4746 29.4103 39.7794 30.1055 38.9219 30.1055Z" fill="#FF6600"/>
+                                 </svg>
+                              </div>
+                              <div class="contact-num">
+                                 <span>Chat Us Anytime</span>
+                                 <h5><a href="tel:4065550120">(406) 555-0120</a></h5>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="header__hamburger d-lg-none d-inline-flex">
+                           <div class="sidebar__toggle">
+                              <a class="bar-icon" href="javascript:void(0)">
+                              <span></span>
+                              <span>
+                              <small></small>
+                              </span>
+                              <span></span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- Header area end -->
+
+
+ <main>
+   <div class="page-wrapper">
+
+
+   <!-- Banner area start -->
+ <section class="banner-3-section p-relative text-center">
+   <div class="banner-slider p-relative z-0">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">
+            <div class="banner-slider-area" data-background="assets/imgs/banner/banner-4.jpg">
+               <h5>Journey Beyond</h5>
+               <h1>Navigating Business Challenges <br> <span>Delivering Results</span> </h1>
+               <a class="primary-btn-1 btn-hover" href="about.html">
+                  Get Started
+                  <i class="icon-42"></i>
+                  <span style="top: 147.172px; left: 108.5px;"></span>
+               </a>
+            </div>
+         </div>
+         <div class="swiper-slide">
+            <div class="banner-slider-area" data-background="assets/imgs/banner/banner-5.jpg">
+               <h5>Navigating Dreams</h5>
+               <h1>Strategic Business Navigation <br> <span>ensures adaptability</span> </h1>
+               <a class="primary-btn-1 btn-hover" href="about.html">
+                  Get Started
+                  <i class="icon-42"></i>
+                  <span style="top: 147.172px; left: 108.5px;"></span>
+               </a>
+            </div>
+         </div>
+         <div class="swiper-slide">
+            <div class="banner-slider-area" data-background="assets/imgs/banner/banner-6.jpg">
+               <h5>Evolving Perspectives</h5>
+               <h1>Strategic Adaptation Mastery <br> <span>achieving success</span> </h1>
+               <a class="primary-btn-1 btn-hover" href="about.html">
+                  Get Started
+                  <i class="icon-42"></i>
+                  <span style="top: 147.172px; left: 108.5px;"></span>
+               </a>
+            </div>
+         </div>
+         <div class="swiper-slide">
+            <div class="banner-slider-area" data-background="assets/imgs/banner/banner-4.jpg">
+               <h5>Igniting Curiosity</h5>
+               <h1>Strategizing Solutions <br> <span> Inspiring Transformation</span> </h1>
+               <a class="primary-btn-1 btn-hover" href="about.html">
+                  Get Started
+                  <i class="icon-42"></i>
+                  <span style="top: 147.172px; left: 108.5px;"></span>
+               </a>
+            </div>
+         </div>
+         <div class="swiper-slide">
+            <div class="banner-slider-area" data-background="assets/imgs/banner/banner-5.jpg">
+               <h5>Expanding Horizons</h5>
+               <h1>Tackling hurdles <br> <span>realizing potential</span> </h1>
+               <a class="primary-btn-1 btn-hover" href="about.html">
+                  Get Started
+                  <i class="icon-42"></i>
+                  <span style="top: 147.172px; left: 108.5px;"></span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- If we need navigation buttons -->
+   <div class="banner-slider-navigation-wrapper position-relative">
+      <div class="common-slider-navigation">
+         <button class="banner-button-custom-prev"><i class="fal fa-arrow-left-long"></i></button>
+         <button class="banner-button-custom-next"><i class="fal fa-arrow-right-long"></i></button>
+      </div>
+   </div>
+   <!-- If we need pagination -->
+   <div class="banner-custom-pagination"></div>
+ </section>
+   <!-- Banner area end -->
+
+   <!-- Services area start -->
+   <section class="service-section style-2 p-relative">
+      <div class="shape-topo">
+         <img src="assets/imgs/services/service-topo.png" alt="shape">
+      </div>
+      <div class="shape-bus">
+         <img src="assets/imgs/services/service-bus.png" alt="shape">
+      </div>
+      <div class="container">
+         <div class="swiper service-active-2">
+            <div class="swiper-wrapper">
+               <!-- block -->
+               <div class="swiper-slide">
+                  <div class="service-main-box box-shadow-1">
+                     <div class="icon-area">
+                        <img src="assets/imgs/services/icon-1.png" alt="icon">
+                        <span>01</span>
+                     </div>
+                     <h4><a href="service-details.html">Air freight</a></h4>
+                     <p>Providing legal advice, contract drafting, compliance assistance.</p>
+                     <div class="image-area p-relative">
+                        <a class="service-btn" href="service-details.html"><i class="icon-42"></i></a>
+                        <a class="w-img" href="service-details.html"><img src="assets/imgs/services/service-1.jpg" alt="service-image"></a>
+                     </div>
+                  </div>
+               </div>
+               <!-- block -->
+               <div class="swiper-slide">
+                  <div class="service-main-box box-shadow-1">
+                     <div class="icon-area">
+                        <img src="assets/imgs/services/icon-2.png" alt="icon">
+                        <span>02</span>
+                     </div>
+                     <h4><a href="service-details.html">Road service</a></h4>
+                     <p>Providing legal advice, contract drafting, compliance assistance.</p>
+                     <div class="image-area p-relative">
+                        <a class="service-btn" href="service-details.html"><i class="icon-42"></i></a>
+                        <a class="w-img" href="service-details.html"><img src="assets/imgs/services/service-2.jpg" alt="service-image"></a>
+                     </div>
+                  </div>
+               </div>
+               <!-- block -->
+               <div class="swiper-slide">
+                  <div class="service-main-box box-shadow-1">
+                     <div class="icon-area">
+                        <img src="assets/imgs/services/icon-3.png" alt="icon">
+                        <span>03</span>
+                     </div>
+                     <h4><a href="service-details.html">Ocean Freight</a></h4>
+                     <p>Providing legal advice, contract drafting, compliance assistance.</p>
+                     <div class="image-area p-relative">
+                        <a class="service-btn" href="service-details.html"><i class="icon-42"></i></a>
+                        <a class="w-img" href="service-details.html"><img src="assets/imgs/services/service-3.jpg" alt="service-image"></a>
+                     </div>
+                  </div>
+               </div>
+               <!-- block -->
+               <div class="swiper-slide">
+                  <div class="service-main-box box-shadow-1">
+                     <div class="icon-area">
+                        <img src="assets/imgs/services/icon-4.png" alt="icon">
+                        <span>04</span>
+                     </div>
+                     <h4><a href="service-details.html">Warehousing</a></h4>
+                     <p>Providing legal advice, contract drafting, compliance assistance.</p>
+                     <div class="image-area p-relative">
+                        <a class="service-btn" href="service-details.html"><i class="icon-42"></i></a>
+                        <a class="w-img" href="service-details.html"><img src="assets/imgs/services/service-4.jpg" alt="service-image"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="bottom-image section-space-top">
+         <div class="row">
+            <div class="col-lg-8">
+               <figure class="image w-img">
+                  <img src="assets/imgs/about/about-2.jpg" alt="service-image-1">
+                  <img src="assets/imgs/about/about-2.jpg" alt="service-image-2">
+               </figure>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Services area end -->
+
+   <!-- About area start -->
+   <section class="about-3-section p-relative section-space bg-color-2">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6">
+               <div class="about-3-content pr-100">
+                  <div class="title-box wow mb-40 fadeInRight" data-wow-delay="500ms">
+                     <h5 class="section-sub-title">About Us</h5>
+                     <h2 class="section-title mb-20">Safe & Reliable Cargo Solutions</h2>
+                     <p>Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. Phasellus nec odio orci. Nunc id massa ante. Suspendisse sit amet neque euismod, convallis quam eget, dignissim massa. Aliquam blandit risus purus, in congue nunc venenatis id.  </p>
+                  </div>
+                  <div class="list-area">
+                     <ul>
+                        <li>Safe Packing</li>
+                        <li>Ship Everywhere</li>
+                        <li>Fastest Shipping</li>
+                     </ul>
+                     <ul>
+                        <li>In Time Delivery</li>
+                        <li>Cost Saving</li>
+                        <li>Zero Risk</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6">
+               <div class="about-3-image-area p-relative pt-90">
+                  <figure class="image-one">
+                     <img src="assets/imgs/about/about-5.jpg" alt="about-image-1">
+                  </figure>
+                  <figure class="image-two">
+                     <img src="assets/imgs/about/about-6.jpg" alt="about-image-2">
+                  </figure>
+                  <div class="about-2-counter three" data-background="assets/imgs/about/about-circle.png">
+                     <h1 class="counter">10</h1>
+                     <h4>Years</h4>
+                     <h4><span>Experience</span></h4>
+                  </div>
+                  <figure class="image-three">
+                     <img src="assets/imgs/about/about-car-1.png" alt="about-image-3">
+                  </figure>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- About area end -->
+
+   <!-- text slider area start -->
+   <section class="text-slider-section section-space-medium">
+      <div class="container-fluid">
+         <div class="text-slider-box">
+            <div class="slide-box">
+               <i class="icon-23"></i>
+               <h1>RealTime <span>Tracking</span></h1>
+            </div>
+            <div class="slide-box">
+               <i class="icon-23"></i>
+               <h1>Online <span>Support</span></h1>
+            </div>
+            <div class="slide-box">
+               <i class="icon-23"></i>
+               <h1>Low  <span>Cost</span></h1>
+            </div>
+            <div class="slide-box">
+               <i class="icon-23"></i>
+               <h1>RealTime <span>Tracking</span></h1>
+            </div>
+            <div class="slide-box">
+               <i class="icon-23"></i>
+               <h1>Online <span>Support</span></h1>
+            </div>
+            <div class="slide-box">
+               <i class="icon-23"></i>
+               <h1>Low  <span>Cost</span></h1>
+            </div>
+         </div>
+      </div>
+      </section>
+
+      <!-- text slider area end -->
+
+      <!-- Project area Start -->
+      <section class="project-3-section p-relative">
+         <div class="container">
+            <div class="title-box-area mb-60">
+               <div class="title-box wow mb-20 fadeInRight" data-wow-delay="500ms">
+                  <h5 class="section-sub-title">Recent Work</h5>
+                  <h2 class="section-title">Your Visit Our Expertise Of <br>Creating Beautiful</h2>
+               </div>
+               <a class="primary-btn-2 btn-hover" href="projects.html">
+                  All Project
+                  <i class="icon-42"></i>
+                  <span style="top: 147.172px; left: 108.5px;"></span>
+               </a>
+            </div>
+         </div>
+         <div class="container-fluid g-0">
+            <div class="row g-0">
+               <div class="col-lg-6">
+                  <a href="project-details.html" class="project-3-area p-relative">
+                     <figure class="image w-img">
+                        <img src="assets/imgs/project/project-3-1.jpg" alt="project-image">
+                        <img src="assets/imgs/project/project-3-1.jpg" alt="project-image">
+                     </figure>
+                     <div class="content">
+                        <h4>Freight Forwarding</h4>
+                        <span>Business Intelligence </span>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-6">
+                  <div class="row g-0">
+                     <div class="col-lg-6">
+                        <a href="project-details.html" class="project-3-area p-relative">
+                           <figure class="image w-img">
+                              <img src="assets/imgs/project/project-3-2.jpg" alt="project-image">
+                              <img src="assets/imgs/project/project-3-2.jpg" alt="project-image">
+                           </figure>
+                           <div class="content">
+                              <h4>Road Forwarding</h4>
+                              <span>Business Intelligence </span>
+                           </div>
+                        </a>
+                        <a href="project-details.html" class="project-3-area p-relative">
+                           <figure class="image w-img">
+                              <img src="assets/imgs/project/project-3-3.jpg" alt="project-image">
+                              <img src="assets/imgs/project/project-3-3.jpg" alt="project-image">
+                           </figure>
+                           <div class="content">
+                              <h4>Freight Forwarding</h4>
+                              <span>Business Intelligence </span>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-lg-6">
+                        <a href="project-details.html" class="project-3-area p-relative">
+                           <figure class="image w-img">
+                              <img src="assets/imgs/project/project-3-4.jpg" alt="project-image">
+                              <img src="assets/imgs/project/project-3-4.jpg" alt="project-image">
+                           </figure>
+                           <div class="content">
+                              <h4>Ship Forwarding</h4>
+                              <span>Business Intelligence </span>
+                           </div>
+                        </a>
+                        <a href="project-details.html" class="project-3-area p-relative">
+                           <figure class="image w-img">
+                              <img src="assets/imgs/project/project-3-5.jpg" alt="project-image">
+                              <img src="assets/imgs/project/project-3-5.jpg" alt="project-image">
+                           </figure>
+                           <div class="content">
+                              <h4>Ship Forwarding</h4>
+                              <span>Business Intelligence </span>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Project area end -->
+
+
+   <!-- Request Form area start -->
+   <section class="request-form-section section-space-top p-relative" data-background="assets/imgs/form/req-1.jpg">
+      <div class="truck">
+         <img src="assets/imgs/form/req-truck.png" alt="truck">
+      </div>
+      <div class="box">
+         <img src="assets/imgs/form/req-box.png" alt="box">
+      </div>
+      <div class="shape" data-background="assets/imgs/form/req-shape.png"></div>
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6">
+               <div class="req-form-area p-relative" data-background="assets/imgs/form/req-from-bg.jpg">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                     <li class="nav-item" role="presentation">
+                       <button class="nav-link active" id="pills-air-tab" data-bs-toggle="pill" data-bs-target="#pills-air" type="button" role="tab" aria-controls="pills-air" aria-selected="true">
+                        <i class="icon-11"></i>
+                        Air Freight
+                     </button>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                       <button class="nav-link" id="pills-road-tab" data-bs-toggle="pill" data-bs-target="#pills-road" type="button" role="tab" aria-controls="pills-road" aria-selected="false">
+                        <i class="icon-12"></i>
+                        Road Freight
+                     </button>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                       <button class="nav-link" id="pills-ocean-tab" data-bs-toggle="pill" data-bs-target="#pills-ocean" type="button" role="tab" aria-controls="pills-ocean" aria-selected="false">
+                        <i class="icon-12"></i>
+                        Ocean Freight
+                     </button>
+                     </li>
+                   </ul>
+                   <div class="tab-content" id="pills-tabContent">
+                        <!-- tab-block -->
+                     <div class="tab-pane fade show active" id="pills-air" role="tabpanel" aria-labelledby="pills-air-tab">
+                        <div class="title-box mb-20">
+                           <h5 class="section-sub-title">Request Form</h5>
+                           <h2 class="section-title">Request Quote Form</h2>
+                        </div>
+                        <form action="#">
+                           <div class="row">
+                              <div class="col-lg-12">
+                                 <label>Personal Information</label>
+                                 <input type="text" placeholder="Name">
+                              </div>
+                              <div class="col-lg-6">
+                                 <input type="email" placeholder="Email">
+                              </div>
+                              <div class="col-lg-6">
+                                 <input type="tel" placeholder="Phone">
+                              </div>
+                              <div class="col-lg-12">
+                                 <div class="km-range-area">
+                                    <label>Distance In (Kilometer)</label>
+
+                                    <div class="range-slider-1" data-range-min="50" data-range-max="500"
+                                        data-limit="500" data-start-min="50" data-start-max="300"
+                                        id="range-slider-1"></div>
+
+                                    <div class="form-group">
+                                        <div class="inner p-relative">
+                                            <p><span id="max-value-rangeslider-1"></span> KM</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <label>Freight Type</label>
+                                 <div class="select-box">
+                                    <div class="nice-select wide" tabindex="0">
+                                       <span class="current">Select</span>
+                                       <ul class="list">
+                                          <li data-value="Select" data-display="Select" class="option selected focus">Select</li>
+                                          <li data-value="1" class="option">Type One</li>
+                                          <li data-value="2" class="option">Type Two</li>
+                                          <li data-value="3" class="option">Type Three</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <label>Load</label>
+                                 <div class="select-box">
+                                    <div class="nice-select wide" tabindex="0">
+                                       <span class="current">Select</span>
+                                       <ul class="list">
+                                          <li data-value="Select" data-display="Select" class="option selected focus">Select</li>
+                                          <li data-value="1" class="option">Load One</li>
+                                          <li data-value="2" class="option">Load Two</li>
+                                          <li data-value="3" class="option">Load Three</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12">
+                                 <div class="btn-area">
+                                    <button class="primary-btn-2 btn-hover" type="submit">
+                                       Get a Quote
+                                       <i class="icon-42"></i>
+                                       <span style="top: 147.172px; left: 108.5px;"></span>
+                                    </button>
+                                    <div class="call-us">
+                                       <h5>Or Give us a call </h5>
+                                       <a href="tel:+0123456789">+0123 4567 89</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                        <!-- tab-block -->
+                     <div class="tab-pane fade" id="pills-road" role="tabpanel" aria-labelledby="pills-road-tab">
+                        <div class="title-box mb-20">
+                           <h5 class="section-sub-title">Request Form</h5>
+                           <h2 class="section-title">Request Quote Form</h2>
+                        </div>
+                        <form action="#">
+                           <div class="row">
+                              <div class="col-lg-12">
+                                 <label>Personal Information</label>
+                                 <input type="text" placeholder="Name">
+                              </div>
+                              <div class="col-lg-6">
+                                 <input type="email" placeholder="Email">
+                              </div>
+                              <div class="col-lg-6">
+                                 <input type="tel" placeholder="Phone">
+                              </div>
+                              <div class="col-lg-12">
+                                 <div class="km-range-area">
+                                    <label>Distance In (Kilometer)</label>
+
+                                    <div class="range-slider-2" data-range-min="50" data-range-max="500"
+                                        data-limit="500" data-start-min="50" data-start-max="300"
+                                        id="range-slider-2"></div>
+
+                                    <div class="form-group">
+                                        <div class="inner p-relative">
+                                            <p><span id="max-value-rangeslider-2"></span> KM</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <label>Freight Type</label>
+                                 <div class="select-box">
+                                    <div class="nice-select wide" tabindex="0">
+                                       <span class="current">Select</span>
+                                       <ul class="list">
+                                          <li data-value="Select" data-display="Select" class="option selected focus">Select</li>
+                                          <li data-value="1" class="option">Type One</li>
+                                          <li data-value="2" class="option">Type Two</li>
+                                          <li data-value="3" class="option">Type Three</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <label>Load</label>
+                                 <div class="select-box">
+                                    <div class="nice-select wide" tabindex="0">
+                                       <span class="current">Select</span>
+                                       <ul class="list">
+                                          <li data-value="Select" data-display="Select" class="option selected focus">Select</li>
+                                          <li data-value="1" class="option">Load One</li>
+                                          <li data-value="2" class="option">Load Two</li>
+                                          <li data-value="3" class="option">Load Three</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12">
+                                 <div class="btn-area">
+                                    <button class="primary-btn-2 btn-hover" type="submit">
+                                       Get a Quote
+                                       <i class="icon-42"></i>
+                                       <span style="top: 147.172px; left: 108.5px;"></span>
+                                    </button>
+                                    <div class="call-us">
+                                       <h5>Or Give us a call </h5>
+                                       <a href="tel:+0123456789">+0123 4567 89</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                     <div class="tab-pane fade" id="pills-ocean" role="tabpanel" aria-labelledby="pills-ocean-tab">
+                        <div class="title-box mb-20">
+                           <h5 class="section-sub-title">Request Form</h5>
+                           <h2 class="section-title">Request Quote Form</h2>
+                        </div>
+                        <form action="#">
+                           <div class="row">
+                              <div class="col-lg-12">
+                                 <label>Personal Information</label>
+                                 <input type="text" placeholder="Name">
+                              </div>
+                              <div class="col-lg-6">
+                                 <input type="email" placeholder="Email">
+                              </div>
+                              <div class="col-lg-6">
+                                 <input type="tel" placeholder="Phone">
+                              </div>
+                              <div class="col-lg-12">
+                                 <div class="km-range-area">
+                                    <label>Distance In (Kilometer)</label>
+
+                                    <div class="range-slider-3" data-range-min="50" data-range-max="500"
+                                        data-limit="500" data-start-min="50" data-start-max="300"
+                                        id="range-slider-3"></div>
+
+                                    <div class="form-group">
+                                        <div class="inner p-relative">
+                                            <p><span id="max-value-rangeslider-3"></span> KM</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <label>Freight Type</label>
+                                 <div class="select-box">
+                                    <div class="nice-select wide" tabindex="0">
+                                       <span class="current">Select</span>
+                                       <ul class="list">
+                                          <li data-value="Select" data-display="Select" class="option selected focus">Select</li>
+                                          <li data-value="1" class="option">Type One</li>
+                                          <li data-value="2" class="option">Type Two</li>
+                                          <li data-value="3" class="option">Type Three</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <label>Load</label>
+                                 <div class="select-box">
+                                    <div class="nice-select wide" tabindex="0">
+                                       <span class="current">Select</span>
+                                       <ul class="list">
+                                          <li data-value="Select" data-display="Select" class="option selected focus">Select</li>
+                                          <li data-value="1" class="option">Load One</li>
+                                          <li data-value="2" class="option">Load Two</li>
+                                          <li data-value="3" class="option">Load Three</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12">
+                                 <div class="btn-area">
+                                    <button class="primary-btn-2 btn-hover" type="submit">
+                                       Get a Quote
+                                       <i class="icon-42"></i>
+                                       <span style="top: 147.172px; left: 108.5px;"></span>
+                                    </button>
+                                    <div class="call-us">
+                                       <h5>Or Give us a call </h5>
+                                       <a href="tel:+0123456789">+0123 4567 89</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                   </div>
+               </div>
+            </div>
+            <div class="col-lg-6">
+               <div class="req-form-content-area p-relative section-space-top pl-100">
+                  <div class="title-box wow mb-20 fadeInRight" data-wow-delay="500ms">
+                     <h5 class="section-sub-title">Our perfection</h5>
+                     <h2 class="section-title mb-20">Perfect Solution For Your Business</h2>
+                     <p class="mb-40">Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. </p>
+                  </div>
+                  <div class="list-area">
+                     <ul>
+                        <li>Safe Packing</li>
+                        <li>Ship Everywhere</li>
+                        <li>Fastest Shipping</li>
+                     </ul>
+                     <ul>
+                        <li>In Time Delivery</li>
+                        <li>Cost Saving</li>
+                        <li>Zero Risk</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Request Form area end -->
+
+   <!-- testimonials area start -->
+   <section class="testimonials-3-section section-space p-relative">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6">
+               <div class="testimonials-3-content-area pr-160">
+                  <div class="title-box wow fadeInRight" data-wow-delay="500ms">
+                     <h5 class="section-sub-title">Client Reviews</h5>
+                     <h2 class="section-title">Turning Challenges Into Shipments</h2>
+                     <p class="pt-30 pb-30">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                  </div>
+                  <!-- If we need navigation buttons -->
+                  <div class="testimonials-3-navigation-wrapper position-relative">
+                     <div class="common-slider-navigation">
+                        <button class="testimonial-2-button-prev"><i class="fal fa-arrow-left-long"></i></button>
+                        <button class="testimonial-2-button-next"><i class="fal fa-arrow-right-long"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6">
+               <div class="swiper testimonial-2-active">
+                  <div class="swiper-wrapper">
+                        <!-- block -->
+                     <div class="swiper-slide">
+                        <div class="testimonials-area is-black">
+                           <div class="quote-icon"><i class="icon-25"></i></div>
+                           <div class="author-area">
+                              <figure class="image">
+                                 <img src="assets/imgs/resources/author-1.jpg" alt="author">
+                              </figure>
+                              <div class="author-info">
+                                 <h4>Jane Cooper</h4>
+                                 <span>Transportation Specialist</span>
+                                 <ul class="ratings">
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <p>“ Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. Phasellus nec odio orci. Nunc id massa ante. ”</p>
+                        </div>
+                     </div>
+                        <!-- block -->
+                     <div class="swiper-slide">
+                        <div class="testimonials-area is-black">
+                           <div class="quote-icon"><i class="icon-25"></i></div>
+                           <div class="author-area">
+                              <figure class="image">
+                                 <img src="assets/imgs/resources/author-2.jpg" alt="author">
+                              </figure>
+                              <div class="author-info">
+                                 <h4>Hanga Moye</h4>
+                                 <span>Transportation Specialist</span>
+                                 <ul class="ratings">
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <p>“ Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. Phasellus nec odio orci. Nunc id massa ante. ”</p>
+                        </div>
+                     </div>
+                        <!-- block -->
+                     <div class="swiper-slide">
+                        <div class="testimonials-area is-black">
+                           <div class="quote-icon"><i class="icon-25"></i></div>
+                           <div class="author-area">
+                              <figure class="image">
+                                 <img src="assets/imgs/resources/author-1.jpg" alt="author">
+                              </figure>
+                              <div class="author-info">
+                                 <h4>Jane Cooper</h4>
+                                 <span>Transportation Specialist</span>
+                                 <ul class="ratings">
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                    <li class="fas fa-star"></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <p>“ Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. Phasellus nec odio orci. Nunc id massa ante. ”</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- testimonials area end -->
+
+   <!-- video and faq area start -->
+   <section class="videos-and-faq p-relative" data-background="assets/imgs/resources/video-bg-1.jpg">
+      <div class="shape-1">
+         <img src="assets/imgs/resources/video-dot.png" alt="video-shape-1">
+      </div>
+      <div class="shape-2">
+         <img src="assets/imgs/resources/video-plane.png" alt="video-shape-2">
+      </div>
+      <div class="shape-3">
+         <img src="assets/imgs/resources/video-topo.png" alt="video-shape-3">
+      </div>
+      <div class="vf-bg-white"></div>
+      <div class="container">
+         <div class="videos-and-faq-1 p-relative z-0">
+            <figure class="image w-img">
+               <img src="assets/imgs/resources/video-bg.jpg" alt="video-image">
+               <img src="assets/imgs/resources/video-bg.jpg" alt="video-image">
+            </figure>
+            <div class="play-btn">
+               <div class="video_player_btn">
+                  <a href="https://www.youtube.com/watch?v=eEzD-Y97ges" class="popup-video"><i class="icon-43"></i></a>
+              </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-6">
+               <div class="faq-2-content is-black p-relative section-space-medium">
+                  <div class="title-box wow mb-60 fadeInRight" data-wow-delay="500ms">
+                     <h5 class="section-sub-title">Ask Question</h5>
+                     <h2 class="section-title">Transport All Of The <br>Logistics </h2>
+                  </div>
+                  <div class="vw-faq">
+                     <div class="accordion" id="accordionExample-st-2">
+                        <div class="vw-faq-group">
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne-st-2">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-st-2" aria-expanded="false" aria-controls="collapseOne-st-2">
+                                    <span>Q.1</span> What is the difference between freight and shipping?
+                                 </button>
+                              </h2>
+                              <div id="collapseOne-st-2" class="accordion-collapse collapse" aria-labelledby="headingOne-st-2" data-bs-parent="#accordionExample-st-2">
+                                 <div class="accordion-body">
+                                    Sure, I'd be happy to help you with that. Could you please provide more details on what specific information you would like to include in your transport list question? For example.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo-st-2">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-st-2" aria-expanded="false" aria-controls="collapseTwo-st-2">
+                                    <span>Q.2</span> How can I track my shipment?
+                                 </button>
+                              </h2>
+                              <div id="collapseTwo-st-2" class="accordion-collapse collapse" aria-labelledby="headingTwo-st-2" data-bs-parent="#accordionExample-st-2">
+                                 <div class="accordion-body">
+                                    Sure, I'd be happy to help you with that. Could you please provide more details on what specific information you would like to include in your transport list question? For example.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree-st-2">
+                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-st-2" aria-expanded="true" aria-controls="collapseThree-st-2">
+                                    <span>Q.3</span> What are the different modes of transportation for logistics?
+                                 </button>
+                              </h2>
+                              <div id="collapseThree-st-2" class="accordion-collapse collapse show" aria-labelledby="headingThree-st-2" data-bs-parent="#accordionExample-st-2">
+                                 <div class="accordion-body">
+                                    Sure, I'd be happy to help you with that. Could you please provide more details on what specific information you would like to include in your transport list question? For example.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingFour-st-2">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour-st-2" aria-expanded="false" aria-controls="collapseFour-st-2">
+                                    <span>Q.4</span> What is the role of third-party logistics (3PL) providers?
+                                 </button>
+                              </h2>
+                              <div id="collapseFour-st-2" class="accordion-collapse collapse" aria-labelledby="headingFour-st-2" data-bs-parent="#accordionExample-st-2">
+                                 <div class="accordion-body">
+                                    Sure, I'd be happy to help you with that. Could you please provide more details on what specific information you would like to include in your transport list question? For example.
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6">
+               <div class="vf-content-1 p-relative pl-120">
+                  <div class="title-box wow mb-20 fadeInRight" data-wow-delay="500ms">
+                     <h5 class="section-sub-title">Your Favorite’s destination</h5>
+                     <h2 class="section-title mb-20">Transport All Of The World Connection </h2>
+                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+                  </div>
+                  <div class="list-area">
+                     <ul>
+                        <li>Faster & Reliable Execution</li>
+                        <li>track my shipment</li>
+                     </ul>
+                  </div>
+                  <a class="primary-btn-2 btn-hover" href="contact.html">
+                     Get A Quote
+                     <i class="icon-42"></i>
+                     <span style="top: 147.172px; left: 108.5px;"></span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- video and faq area end -->
+
+   <!-- work process area start -->
+   <section class="work-process-section text-center section-space-top p-relative" data-background="assets/imgs/resources/process-bg-map.png">
+      <div class="container">
+         <div class="title-box wow mb-60 text-center fadeInRight" data-wow-delay="500ms">
+            <h5 class="section-sub-title">Our Process</h5>
+            <h2 class="section-title">How It Work</h2>
+         </div>
+         <div class="row g-4">
+            <div class="col-lg-3 col-md-6 mb-15">
+               <div class="work-process-box">
+                  <div class="inner">
+                     <div class="icon-box">
+                        <i class="icon-15"></i>
+                     </div>
+                     <h5>Received your product </h5>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-15">
+               <div class="work-process-box">
+                  <div class="inner">
+                     <div class="icon-box">
+                        <i class="icon-16"></i>
+                     </div>
+                     <h5>Warehousing product</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-15">
+               <div class="work-process-box">
+                  <div class="inner">
+                     <div class="icon-box">
+                        <i class="icon-17"></i>
+                     </div>
+                     <h5>Send The Product </h5>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-15">
+               <div class="work-process-box">
+                  <div class="inner">
+                     <div class="icon-box">
+                        <i class="icon-18"></i>
+                     </div>
+                     <h5>Package has been delivered </h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- work process area end -->
+
+   <!-- blog area start -->
+   <section class="blog-section section-space p-relative">
+      <div class="container">
+         <div class="title-box wow mb-60 text-center fadeInRight" data-wow-delay="500ms">
+            <h5 class="section-sub-title">Blog & News</h5>
+            <h2 class="section-title">Unlocking The Potential <br>Of Logistics</h2>
+         </div>
+         <div class="swiper blog-1-active">
+            <div class="swiper-wrapper">
+                  <!-- block -->
+               <div class="swiper-slide">
+                  <div class="blog-area-1 p-relative">
+                     <a href="blog-details.html" class="image w-img">
+                        <img src="assets/imgs/blog/blog-1.jpg" alt="blog-image">
+                     </a>
+                     <div class="blog-content p-relative">
+                        <a href="#" class="date-meta">
+                           <h5>07</h5>
+                           <span>February 2024 </span>
+                        </a>
+                        <a href="#" class="author-meta">
+                           <img src="assets/imgs/blog/blog-author-1.jpg" alt="author">
+                           <div class="info">
+                              <span>By Author</span>
+                              <h5>Cameron Williamson</h5>
+                           </div>
+                        </a>
+                        <hr>
+                        <h4 class="blog-title"><a href="blog-details.html">We very careful handling the valuable goods</a></h4>
+                     </div>
+                     <a href="blog-details.html" class="blog-btn-area">
+                     <div class="inner">
+                           <span>Read More</span>
+                           <i class="icon-42"></i>
+                     </div>
+                     </a>
+                  </div>
+               </div>
+                  <!-- block -->
+               <div class="swiper-slide">
+                  <div class="blog-area-1 p-relative">
+                     <a href="blog-details.html" class="image w-img">
+                        <img src="assets/imgs/blog/blog-2.jpg" alt="blog-image">
+                     </a>
+                     <div class="blog-content p-relative">
+                        <a href="#" class="date-meta">
+                           <h5>07</h5>
+                           <span>February 2024 </span>
+                        </a>
+                        <a href="#" class="author-meta">
+                           <img src="assets/imgs/blog/blog-author-2.jpg" alt="author">
+                           <div class="info">
+                              <span>By Author</span>
+                              <h5>Cameron Williamson</h5>
+                           </div>
+                        </a>
+                        <hr>
+                        <h4 class="blog-title"><a href="blog-details.html">We very careful handling the valuable goods</a></h4>
+                     </div>
+                     <a href="blog-details.html" class="blog-btn-area">
+                     <div class="inner">
+                           <span>Read More</span>
+                           <i class="icon-42"></i>
+                     </div>
+                     </a>
+                  </div>
+               </div>
+                  <!-- block -->
+               <div class="swiper-slide">
+                  <div class="blog-area-1 p-relative">
+                     <a href="blog-details.html" class="image w-img">
+                        <img src="assets/imgs/blog/blog-1.jpg" alt="blog-image">
+                     </a>
+                     <div class="blog-content p-relative">
+                        <a href="#" class="date-meta">
+                           <h5>07</h5>
+                           <span>February 2024 </span>
+                        </a>
+                        <a href="#" class="author-meta">
+                           <img src="assets/imgs/blog/blog-author-1.jpg" alt="author">
+                           <div class="info">
+                              <span>By Author</span>
+                              <h5>Cameron Williamson</h5>
+                           </div>
+                        </a>
+                        <hr>
+                        <h4 class="blog-title"><a href="blog-details.html">We very careful handling the valuable goods</a></h4>
+                     </div>
+                     <a href="blog-details.html" class="blog-btn-area">
+                     <div class="inner">
+                           <span>Read More</span>
+                           <i class="icon-42"></i>
+                     </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+            <!-- If we need pagination -->
+         <div class="blog-1-dot-inner text-center p-relative mt-50">
+            <div class="blog-1-swiper-dot"></div>
+         </div>
+      </div>
+   </section>
+   <!-- blog area end -->
+
+
+
+   </div><!-- page-wrapper -->
+ </main>
+
+
+   <!-- Footer area start -->
+   <footer>
+      <div class="footer-main p-relative">
+         <div class="shape-bottom" data-background="assets/imgs/footer/footer-4.png"></div>
+         <div class="footer-wrapper two bg-color-4">
+            <div class="container">
+               <div class="footer-top p-relative">
+                  <div class="icon-box">
+                     <div class="icon-area">
+                        <i class="icon-27"></i>
+                     </div>
+                     <div class="content">
+                        <span>E-mail Us</span>
+                        <h5><a href="mailto:kenzi.lawson@example.com">kenzi.lawson@example.com</a></h5>
+                     </div>
+                  </div>
+                  <div class="icon-box">
+                     <div class="icon-area">
+                        <i class="icon-28"></i>
+                     </div>
+                     <div class="content">
+                        <span>Head Office Address:</span>
+                        <h5><a href="#">2972 Westheimer Rd. Santa Ana, Illinois 85486 </a></h5>
+                     </div>
+                  </div>
+                  <div class="icon-box">
+                     <div class="icon-area">
+                        <i class="icon-29"></i>
+                     </div>
+                     <div class="content">
+                        <span>Support   24/7</span>
+                        <h5><a href="tel:+1234578910">+123 45789 10</a></h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer-middle pt-60 pb-50">
+                  <div class="row">
+                     <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget one p-relative">
+                           <div class="footer-logo">
+                              <a href="index.html"><img src="assets/imgs/footer/footer-logo.svg" alt="footer-logo"></a>
+                           </div>
+                           <p class="pt-30 pb-20">Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. </p>
+                           <ul class="footer-socials-icon">
+                              <li><a href="#"><i class="icon-20"></i></a></li>
+                              <li><a href="#"><i class="icon-19"></i></a></li>
+                              <li><a href="#"><i class="icon-21"></i></a></li>
+                              <li><a href="#"><i class="icon-30"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget two pl-50">
+                           <h5 class="footer-title p-relative">Industry Served </h5>
+                           <ul class="footer-menu">
+                              <li><a href="services.html">Warehousing</a></li>
+                              <li><a href="services.html">Cargo Freight </a></li>
+                              <li><a href="services.html">Ocean Freight</a></li>
+                              <li><a href="services.html">Automobile</a></li>
+                              <li><a href="services.html">Export Import</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget two pl-50">
+                           <h5 class="footer-title p-relative">Company Info </h5>
+                             <ul class="footer-menu">
+                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="services.html">Services </a></li>
+                              <li><a href="projects.html">Projects</a></li>
+                              <li><a href="blog-details.html">Blog</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget two">
+                           <h5 class="footer-title p-relative">Instagram </h5>
+                           <div class="footer-gallery">
+                              <div class="image-area p-relative">
+                                 <a class="popup-image" href="assets/imgs/footer/insta-1.png">
+                                    <img src="assets/imgs/footer/insta-1.png" alt="footer-image">
+                                    <i class="fab fa-instagram"></i>
+                                 </a>
+                              </div>
+                              <div class="image-area p-relative">
+                                 <a class="popup-image" href="assets/imgs/footer/insta-2.png">
+                                    <img src="assets/imgs/footer/insta-2.png" alt="footer-image">
+                                    <i class="fab fa-instagram"></i>
+                                 </a>
+                              </div>
+                              <div class="image-area p-relative">
+                                 <a class="popup-image" href="assets/imgs/footer/insta-3.png">
+                                    <img src="assets/imgs/footer/insta-3.png" alt="footer-image">
+                                    <i class="fab fa-instagram"></i>
+                                 </a>
+                              </div>
+                              <div class="image-area p-relative">
+                                 <a class="popup-image" href="assets/imgs/footer/insta-4.png">
+                                    <img src="assets/imgs/footer/insta-4.png" alt="footer-image">
+                                    <i class="fab fa-instagram"></i>
+                                 </a>
+                              </div>
+                              <div class="image-area p-relative">
+                                 <a class="popup-image" href="assets/imgs/footer/insta-5.png">
+                                    <img src="assets/imgs/footer/insta-5.png" alt="footer-image">
+                                    <i class="fab fa-instagram"></i>
+                                 </a>
+                              </div>
+                              <div class="image-area p-relative">
+                                 <a class="popup-image" href="assets/imgs/footer/insta-6.png">
+                                    <img src="assets/imgs/footer/insta-6.png" alt="footer-image">
+                                    <i class="fab fa-instagram"></i>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer-bottom p-relative">
+                  <div class="footer-copyright">
+                     <span>© Copyright 2024 / All right reserved</span>
+                  </div>
+                  <div class="footer-terms">
+                     <ul>
+                        <li><a href="#">Privacy /</a></li>
+                        <li><a href="#"> Terms & Condition /</a></li>
+                        <li><a href="#">Site map /</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer area end -->
+
+
+
+
+   <!-- JS here -->
+   <script src="assets/js/jquery-3.6.0.min.js"></script>
+   <script src="assets/js/waypoints.min.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/meanmenu.min.js"></script>
+   <script src="assets/js/swiper.min.js"></script>
+   <script src="assets/js/slick.min.js"></script>
+   <script src="assets/js/magnific-popup.min.js"></script>
+   <script src="assets/js/counterup.js"></script>
+   <script src="assets/js/wow.js"></script>
+   <script src="assets/js/isotope.js"></script>
+   <script src="assets/js/jquery.nice-select.min.js"></script>
+   <script src="assets/js/nouislider.min.js"></script>
+   <!-- <script src="assets/js/sweetalert2.all.min.js"></script>
+   <script src="assets/js/email.min.js"></script>
+   <script>
+      emailjs.init('OSMhTkiX_rHIJgfeF')
+   </script>
+    <script src="assets/js/email-validation.js"></script> -->
+   <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
