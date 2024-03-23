@@ -12,39 +12,39 @@
    <!-- Place favicon.ico in the root directory -->
    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/favicon.svg">
    <!-- CSS here -->
-   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-   <link rel="stylesheet" href="assets/css/meanmenu.min.css">
-   <link rel="stylesheet" href="assets/css/animate.css">
-   <link rel="stylesheet" href="assets/css/swiper.min.css">
-   <link rel="stylesheet" href="assets/css/slick.css">
-   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="assets/css/fontawesome-pro.css">
-   <link rel="stylesheet" href="assets/css/icomoon.css">
-   <link rel="stylesheet" href="assets/css/spacing.css">
-   <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
-   <link rel="stylesheet" href="assets/css/nice-select.css">
-   <link rel="stylesheet" href="assets/css/nouislider.min.css">
-   <link rel="stylesheet" href="assets/css/nouislider.pips.css">
-   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+   <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+   <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+   <link rel="stylesheet" href="{% static 'css/fontawesome-pro.css' %}">
+   <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+   <link rel="stylesheet" href="{% static 'css/spacing.css' %}">
+   <link rel="stylesheet" href="{% static 'css/sweetalert2.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+   <link rel="stylesheet" href="{% static 'css/nouislider.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/nouislider.pips.css' %}">
+   <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 
 <body>
 
    <!-- preloader start -->
-   <div id="preloader">
-      <div class="vw-loader-inner">
-         <div class="vw-loader">
-            <span class="vw-loader-item"></span>
-            <span class="vw-loader-item"></span>
-            <span class="vw-loader-item"></span>
-            <span class="vw-loader-item"></span>
-            <span class="vw-loader-item"></span>
-            <span class="vw-loader-item"></span>
-            <span class="vw-loader-item"></span>
-            <span class="vw-loader-item"></span>
-         </div>
-      </div>
-   </div>
+<!--   <div id="preloader">-->
+<!--      <div class="vw-loader-inner">-->
+<!--         <div class="vw-loader">-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--         </div>-->
+<!--      </div>-->
+<!--   </div>-->
    <!-- preloader start -->
 
 
@@ -184,7 +184,7 @@
                      <div class="header-left">
                         <div class="header-logo">
                            <a href="index.html">
-                           <img src="assets/imgs/logo/logo.svg" alt="header logo">
+                           <img src="{% static 'imgs/logo/logo.svg' %}" alt="header logo">
                            </a>
                         </div>
                      </div>
@@ -299,7 +299,7 @@
    <div class="banner-slider p-relative z-0">
       <div class="swiper-wrapper">
          <div class="swiper-slide">
-            <div class="banner-slider-area" data-background="assets/imgs/banner/banner-4.jpg">
+            <div class="banner-slider-area" data-background="{% static 'imgs/banner/banner-4.jpg' %}">
                <h5>Journey Beyond</h5>
                <h1>Navigating Business Challenges <br> <span>Delivering Results</span> </h1>
                <a class="primary-btn-1 btn-hover" href="about.html">
@@ -310,7 +310,7 @@
             </div>
          </div>
          <div class="swiper-slide">
-            <div class="banner-slider-area" data-background="assets/imgs/banner/banner-5.jpg">
+            <div class="banner-slider-area" data-background="{% static 'imgs/banner/banner-5.jpg' %}">
                <h5>Navigating Dreams</h5>
                <h1>Strategic Business Navigation <br> <span>ensures adaptability</span> </h1>
                <a class="primary-btn-1 btn-hover" href="about.html">
@@ -321,7 +321,7 @@
             </div>
          </div>
          <div class="swiper-slide">
-            <div class="banner-slider-area" data-background="assets/imgs/banner/banner-6.jpg">
+            <div class="banner-slider-area" data-background="{% static 'imgs/banner/banner-6.jpg' %}">
                <h5>Evolving Perspectives</h5>
                <h1>Strategic Adaptation Mastery <br> <span>achieving success</span> </h1>
                <a class="primary-btn-1 btn-hover" href="about.html">
@@ -332,7 +332,7 @@
             </div>
          </div>
          <div class="swiper-slide">
-            <div class="banner-slider-area" data-background="assets/imgs/banner/banner-4.jpg">
+            <div class="banner-slider-area" data-background="{% static 'imgs/banner/banner-4.jpg' %}">
                <h5>Igniting Curiosity</h5>
                <h1>Strategizing Solutions <br> <span> Inspiring Transformation</span> </h1>
                <a class="primary-btn-1 btn-hover" href="about.html">
@@ -343,7 +343,7 @@
             </div>
          </div>
          <div class="swiper-slide">
-            <div class="banner-slider-area" data-background="assets/imgs/banner/banner-5.jpg">
+            <div class="banner-slider-area" data-background="{% static 'imgs/banner/banner-5.jpg' %}">
                <h5>Expanding Horizons</h5>
                <h1>Tackling hurdles <br> <span>realizing potential</span> </h1>
                <a class="primary-btn-1 btn-hover" href="about.html">
@@ -370,10 +370,10 @@
    <!-- Services area start -->
    <section class="service-section style-2 p-relative">
       <div class="shape-topo">
-         <img src="assets/imgs/services/service-topo.png" alt="shape">
+         <img src="{% static 'imgs/services/service-topo.png' %}" alt="shape">
       </div>
       <div class="shape-bus">
-         <img src="assets/imgs/services/service-bus.png" alt="shape">
+         <img src="{% static 'imgs/services/service-bus.png' %}" alt="shape">
       </div>
       <div class="container">
          <div class="swiper service-active-2">
@@ -382,14 +382,14 @@
                <div class="swiper-slide">
                   <div class="service-main-box box-shadow-1">
                      <div class="icon-area">
-                        <img src="assets/imgs/services/icon-1.png" alt="icon">
+                        <img src="{% static 'imgs/services/icon-1.png' %}" alt="icon">
                         <span>01</span>
                      </div>
                      <h4><a href="service-details.html">Air freight</a></h4>
                      <p>Providing legal advice, contract drafting, compliance assistance.</p>
                      <div class="image-area p-relative">
                         <a class="service-btn" href="service-details.html"><i class="icon-42"></i></a>
-                        <a class="w-img" href="service-details.html"><img src="assets/imgs/services/service-1.jpg" alt="service-image"></a>
+                        <a class="w-img" href="service-details.html"><img src="{% static 'imgs/services/service-1.jpg' %}" alt="service-image"></a>
                      </div>
                   </div>
                </div>
@@ -397,14 +397,14 @@
                <div class="swiper-slide">
                   <div class="service-main-box box-shadow-1">
                      <div class="icon-area">
-                        <img src="assets/imgs/services/icon-2.png" alt="icon">
+                        <img src="{% static 'imgs/services/icon-2.png' %}" alt="icon">
                         <span>02</span>
                      </div>
                      <h4><a href="service-details.html">Road service</a></h4>
                      <p>Providing legal advice, contract drafting, compliance assistance.</p>
                      <div class="image-area p-relative">
                         <a class="service-btn" href="service-details.html"><i class="icon-42"></i></a>
-                        <a class="w-img" href="service-details.html"><img src="assets/imgs/services/service-2.jpg" alt="service-image"></a>
+                        <a class="w-img" href="service-details.html"><img src="{% static 'imgs/services/service-2.jpg' %}" alt="service-image"></a>
                      </div>
                   </div>
                </div>
@@ -412,14 +412,14 @@
                <div class="swiper-slide">
                   <div class="service-main-box box-shadow-1">
                      <div class="icon-area">
-                        <img src="assets/imgs/services/icon-3.png" alt="icon">
+                        <img src="{% static 'imgs/services/icon-3.png' %}" alt="icon">
                         <span>03</span>
                      </div>
                      <h4><a href="service-details.html">Ocean Freight</a></h4>
                      <p>Providing legal advice, contract drafting, compliance assistance.</p>
                      <div class="image-area p-relative">
                         <a class="service-btn" href="service-details.html"><i class="icon-42"></i></a>
-                        <a class="w-img" href="service-details.html"><img src="assets/imgs/services/service-3.jpg" alt="service-image"></a>
+                        <a class="w-img" href="service-details.html"><img src="{% static 'imgs/services/service-3.jpg' %}" alt="service-image"></a>
                      </div>
                   </div>
                </div>
@@ -427,14 +427,14 @@
                <div class="swiper-slide">
                   <div class="service-main-box box-shadow-1">
                      <div class="icon-area">
-                        <img src="assets/imgs/services/icon-4.png" alt="icon">
+                        <img src="{% static 'imgs/services/icon-4.png' %}" alt="icon">
                         <span>04</span>
                      </div>
                      <h4><a href="service-details.html">Warehousing</a></h4>
                      <p>Providing legal advice, contract drafting, compliance assistance.</p>
                      <div class="image-area p-relative">
                         <a class="service-btn" href="service-details.html"><i class="icon-42"></i></a>
-                        <a class="w-img" href="service-details.html"><img src="assets/imgs/services/service-4.jpg" alt="service-image"></a>
+                        <a class="w-img" href="service-details.html"><img src="{% static 'imgs/services/service-4.jpg' %}" alt="service-image"></a>
                      </div>
                   </div>
                </div>
@@ -445,8 +445,8 @@
          <div class="row">
             <div class="col-lg-8">
                <figure class="image w-img">
-                  <img src="assets/imgs/about/about-2.jpg" alt="service-image-1">
-                  <img src="assets/imgs/about/about-2.jpg" alt="service-image-2">
+                  <img src="{% static 'imgs/about/about-2.jpg' %}" alt="service-image-1">
+                  <img src="{% static 'imgs/about/about-2.jpg' %}" alt="service-image-2">
                </figure>
             </div>
          </div>
@@ -482,10 +482,10 @@
             <div class="col-lg-6">
                <div class="about-3-image-area p-relative pt-90">
                   <figure class="image-one">
-                     <img src="assets/imgs/about/about-5.jpg" alt="about-image-1">
+                     <img src="{% static 'imgs/about/about-5.jpg' %}" alt="about-image-1">
                   </figure>
                   <figure class="image-two">
-                     <img src="assets/imgs/about/about-6.jpg" alt="about-image-2">
+                     <img src="{% static 'imgs/about/about-6.jpg' %}" alt="about-image-2">
                   </figure>
                   <div class="about-2-counter three" data-background="assets/imgs/about/about-circle.png">
                      <h1 class="counter">10</h1>
@@ -493,7 +493,7 @@
                      <h4><span>Experience</span></h4>
                   </div>
                   <figure class="image-three">
-                     <img src="assets/imgs/about/about-car-1.png" alt="about-image-3">
+                     <img src="{% static 'imgs/about/about-car-1.png' %}" alt="about-image-3">
                   </figure>
                </div>
             </div>
@@ -502,130 +502,13 @@
    </section>
    <!-- About area end -->
 
-   <!-- text slider area start -->
-   <section class="text-slider-section section-space-medium">
-      <div class="container-fluid">
-         <div class="text-slider-box">
-            <div class="slide-box">
-               <i class="icon-23"></i>
-               <h1>RealTime <span>Tracking</span></h1>
-            </div>
-            <div class="slide-box">
-               <i class="icon-23"></i>
-               <h1>Online <span>Support</span></h1>
-            </div>
-            <div class="slide-box">
-               <i class="icon-23"></i>
-               <h1>Low  <span>Cost</span></h1>
-            </div>
-            <div class="slide-box">
-               <i class="icon-23"></i>
-               <h1>RealTime <span>Tracking</span></h1>
-            </div>
-            <div class="slide-box">
-               <i class="icon-23"></i>
-               <h1>Online <span>Support</span></h1>
-            </div>
-            <div class="slide-box">
-               <i class="icon-23"></i>
-               <h1>Low  <span>Cost</span></h1>
-            </div>
-         </div>
-      </div>
-      </section>
-
-      <!-- text slider area end -->
-
-      <!-- Project area Start -->
-      <section class="project-3-section p-relative">
-         <div class="container">
-            <div class="title-box-area mb-60">
-               <div class="title-box wow mb-20 fadeInRight" data-wow-delay="500ms">
-                  <h5 class="section-sub-title">Recent Work</h5>
-                  <h2 class="section-title">Your Visit Our Expertise Of <br>Creating Beautiful</h2>
-               </div>
-               <a class="primary-btn-2 btn-hover" href="projects.html">
-                  All Project
-                  <i class="icon-42"></i>
-                  <span style="top: 147.172px; left: 108.5px;"></span>
-               </a>
-            </div>
-         </div>
-         <div class="container-fluid g-0">
-            <div class="row g-0">
-               <div class="col-lg-6">
-                  <a href="project-details.html" class="project-3-area p-relative">
-                     <figure class="image w-img">
-                        <img src="assets/imgs/project/project-3-1.jpg" alt="project-image">
-                        <img src="assets/imgs/project/project-3-1.jpg" alt="project-image">
-                     </figure>
-                     <div class="content">
-                        <h4>Freight Forwarding</h4>
-                        <span>Business Intelligence </span>
-                     </div>
-                  </a>
-               </div>
-               <div class="col-lg-6">
-                  <div class="row g-0">
-                     <div class="col-lg-6">
-                        <a href="project-details.html" class="project-3-area p-relative">
-                           <figure class="image w-img">
-                              <img src="assets/imgs/project/project-3-2.jpg" alt="project-image">
-                              <img src="assets/imgs/project/project-3-2.jpg" alt="project-image">
-                           </figure>
-                           <div class="content">
-                              <h4>Road Forwarding</h4>
-                              <span>Business Intelligence </span>
-                           </div>
-                        </a>
-                        <a href="project-details.html" class="project-3-area p-relative">
-                           <figure class="image w-img">
-                              <img src="assets/imgs/project/project-3-3.jpg" alt="project-image">
-                              <img src="assets/imgs/project/project-3-3.jpg" alt="project-image">
-                           </figure>
-                           <div class="content">
-                              <h4>Freight Forwarding</h4>
-                              <span>Business Intelligence </span>
-                           </div>
-                        </a>
-                     </div>
-                     <div class="col-lg-6">
-                        <a href="project-details.html" class="project-3-area p-relative">
-                           <figure class="image w-img">
-                              <img src="assets/imgs/project/project-3-4.jpg" alt="project-image">
-                              <img src="assets/imgs/project/project-3-4.jpg" alt="project-image">
-                           </figure>
-                           <div class="content">
-                              <h4>Ship Forwarding</h4>
-                              <span>Business Intelligence </span>
-                           </div>
-                        </a>
-                        <a href="project-details.html" class="project-3-area p-relative">
-                           <figure class="image w-img">
-                              <img src="assets/imgs/project/project-3-5.jpg" alt="project-image">
-                              <img src="assets/imgs/project/project-3-5.jpg" alt="project-image">
-                           </figure>
-                           <div class="content">
-                              <h4>Ship Forwarding</h4>
-                              <span>Business Intelligence </span>
-                           </div>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Project area end -->
-
-
    <!-- Request Form area start -->
-   <section class="request-form-section section-space-top p-relative" data-background="assets/imgs/form/req-1.jpg">
+   <section class="request-form-section section-space-top p-relative" data-background="{% static 'imgs/form/req-1.jpg' %}">
       <div class="truck">
-         <img src="assets/imgs/form/req-truck.png" alt="truck">
+         <img src="{% static 'imgs/form/req-truck.png' %}" alt="truck">
       </div>
       <div class="box">
-         <img src="assets/imgs/form/req-box.png" alt="box">
+         <img src="{% static 'imgs/form/req-box.png' %}" alt="box">
       </div>
       <div class="shape" data-background="assets/imgs/form/req-shape.png"></div>
       <div class="container">
@@ -944,7 +827,7 @@
                            <div class="quote-icon"><i class="icon-25"></i></div>
                            <div class="author-area">
                               <figure class="image">
-                                 <img src="assets/imgs/resources/author-1.jpg" alt="author">
+                                 <img src="{% static 'imgs/resources/author-1.jpg' %}" alt="author">
                               </figure>
                               <div class="author-info">
                                  <h4>Jane Cooper</h4>
@@ -967,7 +850,7 @@
                            <div class="quote-icon"><i class="icon-25"></i></div>
                            <div class="author-area">
                               <figure class="image">
-                                 <img src="assets/imgs/resources/author-2.jpg" alt="author">
+                                 <img src="{% static 'imgs/resources/author-2.jpg' %}" alt="author">
                               </figure>
                               <div class="author-info">
                                  <h4>Hanga Moye</h4>
@@ -990,7 +873,7 @@
                            <div class="quote-icon"><i class="icon-25"></i></div>
                            <div class="author-area">
                               <figure class="image">
-                                 <img src="assets/imgs/resources/author-1.jpg" alt="author">
+                                 <img src="{% static 'imgs/resources/author-1.jpg' %}" alt="author">
                               </figure>
                               <div class="author-info">
                                  <h4>Jane Cooper</h4>
@@ -1016,22 +899,22 @@
    <!-- testimonials area end -->
 
    <!-- video and faq area start -->
-   <section class="videos-and-faq p-relative" data-background="assets/imgs/resources/video-bg-1.jpg">
+   <section class="videos-and-faq p-relative" data-background="{% static 'imgs/resources/video-bg-1.jpg' %}">
       <div class="shape-1">
-         <img src="assets/imgs/resources/video-dot.png" alt="video-shape-1">
+         <img src="{% static 'imgs/resources/video-dot.png' %}" alt="video-shape-1">
       </div>
       <div class="shape-2">
-         <img src="assets/imgs/resources/video-plane.png" alt="video-shape-2">
+         <img src="{% static 'imgs/resources/video-plane.png' %}" alt="video-shape-2">
       </div>
       <div class="shape-3">
-         <img src="assets/imgs/resources/video-topo.png" alt="video-shape-3">
+         <img src="{% static 'imgs/resources/video-topo.png' %}" alt="video-shape-3">
       </div>
       <div class="vf-bg-white"></div>
       <div class="container">
          <div class="videos-and-faq-1 p-relative z-0">
             <figure class="image w-img">
-               <img src="assets/imgs/resources/video-bg.jpg" alt="video-image">
-               <img src="assets/imgs/resources/video-bg.jpg" alt="video-image">
+               <img src="{% static 'imgs/resources/video-bg.jpg' %}" alt="video-image">
+               <img src="{% static 'imgs/resources/video-bg.jpg' %}" alt="video-image">
             </figure>
             <div class="play-btn">
                <div class="video_player_btn">
@@ -1128,7 +1011,7 @@
    <!-- video and faq area end -->
 
    <!-- work process area start -->
-   <section class="work-process-section text-center section-space-top p-relative" data-background="assets/imgs/resources/process-bg-map.png">
+   <section class="work-process-section text-center section-space-top p-relative" data-background="{% static 'imgs/resources/process-bg-map.png' %}">
       <div class="container">
          <div class="title-box wow mb-60 text-center fadeInRight" data-wow-delay="500ms">
             <h5 class="section-sub-title">Our Process</h5>
@@ -1193,7 +1076,7 @@
                <div class="swiper-slide">
                   <div class="blog-area-1 p-relative">
                      <a href="blog-details.html" class="image w-img">
-                        <img src="assets/imgs/blog/blog-1.jpg" alt="blog-image">
+                        <img src="{% static 'imgs/blog/blog-1.jpg' %}" alt="blog-image">
                      </a>
                      <div class="blog-content p-relative">
                         <a href="#" class="date-meta">
@@ -1201,7 +1084,7 @@
                            <span>February 2024 </span>
                         </a>
                         <a href="#" class="author-meta">
-                           <img src="assets/imgs/blog/blog-author-1.jpg" alt="author">
+                           <img src="{% static 'imgs/blog/blog-author-1.jpg' %}" alt="author">
                            <div class="info">
                               <span>By Author</span>
                               <h5>Cameron Williamson</h5>
@@ -1222,7 +1105,7 @@
                <div class="swiper-slide">
                   <div class="blog-area-1 p-relative">
                      <a href="blog-details.html" class="image w-img">
-                        <img src="assets/imgs/blog/blog-2.jpg" alt="blog-image">
+                        <img src="{% static 'imgs/blog/blog-2.jpg' %}" alt="blog-image">
                      </a>
                      <div class="blog-content p-relative">
                         <a href="#" class="date-meta">
@@ -1230,7 +1113,7 @@
                            <span>February 2024 </span>
                         </a>
                         <a href="#" class="author-meta">
-                           <img src="assets/imgs/blog/blog-author-2.jpg" alt="author">
+                           <img src="{% static 'imgs/blog/blog-author-2.jpg' %}" alt="author">
                            <div class="info">
                               <span>By Author</span>
                               <h5>Cameron Williamson</h5>
@@ -1251,7 +1134,7 @@
                <div class="swiper-slide">
                   <div class="blog-area-1 p-relative">
                      <a href="blog-details.html" class="image w-img">
-                        <img src="assets/imgs/blog/blog-1.jpg" alt="blog-image">
+                        <img src="{% static 'imgs/blog/blog-1.jpg' %}" alt="blog-image">
                      </a>
                      <div class="blog-content p-relative">
                         <a href="#" class="date-meta">
@@ -1259,7 +1142,7 @@
                            <span>February 2024 </span>
                         </a>
                         <a href="#" class="author-meta">
-                           <img src="assets/imgs/blog/blog-author-1.jpg" alt="author">
+                           <img src="{% static 'imgs/blog/blog-author-1.jpg' %}" alt="author">
                            <div class="info">
                               <span>By Author</span>
                               <h5>Cameron Williamson</h5>
@@ -1332,7 +1215,7 @@
                      <div class="col-lg-3 col-md-6">
                         <div class="footer-widget one p-relative">
                            <div class="footer-logo">
-                              <a href="index.html"><img src="assets/imgs/footer/footer-logo.svg" alt="footer-logo"></a>
+                              <a href="index.html"><img src="{% static 'imgs/footer/footer-logo.svg' %}" alt="footer-logo"></a>
                            </div>
                            <p class="pt-30 pb-20">Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. </p>
                            <ul class="footer-socials-icon">
@@ -1372,38 +1255,38 @@
                            <h5 class="footer-title p-relative">Instagram </h5>
                            <div class="footer-gallery">
                               <div class="image-area p-relative">
-                                 <a class="popup-image" href="assets/imgs/footer/insta-1.png">
-                                    <img src="assets/imgs/footer/insta-1.png" alt="footer-image">
+                                 <a class="popup-image" href="{% static 'imgs/footer/insta-1.png' %}">
+                                    <img src="{% static 'imgs/footer/insta-1.png' %}" alt="footer-image">
                                     <i class="fab fa-instagram"></i>
                                  </a>
                               </div>
                               <div class="image-area p-relative">
-                                 <a class="popup-image" href="assets/imgs/footer/insta-2.png">
-                                    <img src="assets/imgs/footer/insta-2.png" alt="footer-image">
+                                 <a class="popup-image" href="{% static 'imgs/footer/insta-2.png' %}">
+                                    <img src="{% static 'imgs/footer/insta-2.png' %}" alt="footer-image">
                                     <i class="fab fa-instagram"></i>
                                  </a>
                               </div>
                               <div class="image-area p-relative">
-                                 <a class="popup-image" href="assets/imgs/footer/insta-3.png">
-                                    <img src="assets/imgs/footer/insta-3.png" alt="footer-image">
+                                 <a class="popup-image" href="{% static 'imgs/footer/insta-3.png' %}">
+                                    <img src="{% static 'imgs/footer/insta-3.png' %}" alt="footer-image">
                                     <i class="fab fa-instagram"></i>
                                  </a>
                               </div>
                               <div class="image-area p-relative">
-                                 <a class="popup-image" href="assets/imgs/footer/insta-4.png">
-                                    <img src="assets/imgs/footer/insta-4.png" alt="footer-image">
+                                 <a class="popup-image" href="{% static 'imgs/footer/insta-4.png' %}">
+                                    <img src="{% static 'imgs/footer/insta-4.png' %}" alt="footer-image">
                                     <i class="fab fa-instagram"></i>
                                  </a>
                               </div>
                               <div class="image-area p-relative">
-                                 <a class="popup-image" href="assets/imgs/footer/insta-5.png">
-                                    <img src="assets/imgs/footer/insta-5.png" alt="footer-image">
+                                 <a class="popup-image" href="{% static 'imgs/footer/insta-5.png' %}">
+                                    <img src="{% static 'imgs/footer/insta-5.png' %}" alt="footer-image">
                                     <i class="fab fa-instagram"></i>
                                  </a>
                               </div>
                               <div class="image-area p-relative">
-                                 <a class="popup-image" href="assets/imgs/footer/insta-6.png">
-                                    <img src="assets/imgs/footer/insta-6.png" alt="footer-image">
+                                 <a class="popup-image" href="{% static 'imgs/footer/insta-6.png' %}">
+                                    <img src="{% static 'imgs/footer/insta-6.png' %}" alt="footer-image">
                                     <i class="fab fa-instagram"></i>
                                  </a>
                               </div>
@@ -1435,25 +1318,25 @@
 
 
    <!-- JS here -->
-   <script src="assets/js/jquery-3.6.0.min.js"></script>
-   <script src="assets/js/waypoints.min.js"></script>
-   <script src="assets/js/bootstrap.bundle.min.js"></script>
-   <script src="assets/js/meanmenu.min.js"></script>
-   <script src="assets/js/swiper.min.js"></script>
-   <script src="assets/js/slick.min.js"></script>
-   <script src="assets/js/magnific-popup.min.js"></script>
-   <script src="assets/js/counterup.js"></script>
-   <script src="assets/js/wow.js"></script>
-   <script src="assets/js/isotope.js"></script>
-   <script src="assets/js/jquery.nice-select.min.js"></script>
-   <script src="assets/js/nouislider.min.js"></script>
+   <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+   <script src="{% static 'js/waypoints.min.js' %}"></script>
+   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+   <script src="{% static 'js/meanmenu.min.js' %}"></script>
+   <script src="{% static 'js/swiper.min.js' %}"></script>
+   <script src="{% static 'js/slick.min.js' %}"></script>
+   <script src="{% static 'js/magnific-popup.min.js' %}"></script>
+   <script src="{% static 'js/counterup.js' %}"></script>
+   <script src="{% static 'js/wow.js' %}"></script>
+   <script src="{% static 'js/isotope.js' %}"></script>
+   <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+   <script src="{% static 'js/nouislider.min.js' %}"></script>
    <!-- <script src="assets/js/sweetalert2.all.min.js"></script>
    <script src="assets/js/email.min.js"></script>
    <script>
       emailjs.init('OSMhTkiX_rHIJgfeF')
    </script>
     <script src="assets/js/email-validation.js"></script> -->
-   <script src="assets/js/main.js"></script>
+   <script src="{% static 'js/main.js' %}"></script>
 
 </body>
 
