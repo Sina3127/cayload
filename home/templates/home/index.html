@@ -162,9 +162,9 @@
                <div class="container">
                   <div class="header-info">
                      <ul class="d-flex">
-                        <li><i class="icon-48"></i> 1901 Thornridge Cir. Shiloh, Hawaii 81063</li>
-                        <li><i class="icon-2"></i> sara.cruz@example.com</li>
-                        <li><i class="icon-3"></i> Mon - Fri  / 9:00AM - 11PM </li>
+                        <li><i class="icon-48"></i>{{ companys.address }}</li>
+                        <li><i class="icon-2"></i>{{ companys.email }}</li>
+                        <li><i class="icon-3"></i>{{ companys.work_time }}</li>
                      </ul>
                   </div>
                   <div class="socials-info">
@@ -184,7 +184,7 @@
                      <div class="header-left">
                         <div class="header-logo">
                            <a href="index.html">
-                           <img src="{% static 'imgs/logo/logo.svg' %}" alt="header logo">
+                           <img src="{{ companys.logo.url }}" alt="header logo">
                            </a>
                         </div>
                      </div>
@@ -298,61 +298,19 @@
  <section class="banner-3-section p-relative text-center">
    <div class="banner-slider p-relative z-0">
       <div class="swiper-wrapper">
-         <div class="swiper-slide">
-            <div class="banner-slider-area" data-background="{% static 'imgs/banner/banner-4.jpg' %}">
-               <h5>Journey Beyond</h5>
-               <h1>Navigating Business Challenges <br> <span>Delivering Results</span> </h1>
-               <a class="primary-btn-1 btn-hover" href="about.html">
-                  Get Started
-                  <i class="icon-42"></i>
-                  <span style="top: 147.172px; left: 108.5px;"></span>
-               </a>
+         {% for i in banner %}
+            <div class="swiper-slide">
+               <div class="banner-slider-area" data-background="{{ i.image.url }}">
+                  <h5>{{ i.description }}</h5>
+                  <h1>{{ i.title }}</h1>
+                  <a class="primary-btn-1 btn-hover" href="about.html">
+                     Get Started
+                     <i class="icon-42"></i>
+                     <span style="top: 147.172px; left: 108.5px;"></span>
+                  </a>
+               </div>
             </div>
-         </div>
-         <div class="swiper-slide">
-            <div class="banner-slider-area" data-background="{% static 'imgs/banner/banner-5.jpg' %}">
-               <h5>Navigating Dreams</h5>
-               <h1>Strategic Business Navigation <br> <span>ensures adaptability</span> </h1>
-               <a class="primary-btn-1 btn-hover" href="about.html">
-                  Get Started
-                  <i class="icon-42"></i>
-                  <span style="top: 147.172px; left: 108.5px;"></span>
-               </a>
-            </div>
-         </div>
-         <div class="swiper-slide">
-            <div class="banner-slider-area" data-background="{% static 'imgs/banner/banner-6.jpg' %}">
-               <h5>Evolving Perspectives</h5>
-               <h1>Strategic Adaptation Mastery <br> <span>achieving success</span> </h1>
-               <a class="primary-btn-1 btn-hover" href="about.html">
-                  Get Started
-                  <i class="icon-42"></i>
-                  <span style="top: 147.172px; left: 108.5px;"></span>
-               </a>
-            </div>
-         </div>
-         <div class="swiper-slide">
-            <div class="banner-slider-area" data-background="{% static 'imgs/banner/banner-4.jpg' %}">
-               <h5>Igniting Curiosity</h5>
-               <h1>Strategizing Solutions <br> <span> Inspiring Transformation</span> </h1>
-               <a class="primary-btn-1 btn-hover" href="about.html">
-                  Get Started
-                  <i class="icon-42"></i>
-                  <span style="top: 147.172px; left: 108.5px;"></span>
-               </a>
-            </div>
-         </div>
-         <div class="swiper-slide">
-            <div class="banner-slider-area" data-background="{% static 'imgs/banner/banner-5.jpg' %}">
-               <h5>Expanding Horizons</h5>
-               <h1>Tackling hurdles <br> <span>realizing potential</span> </h1>
-               <a class="primary-btn-1 btn-hover" href="about.html">
-                  Get Started
-                  <i class="icon-42"></i>
-                  <span style="top: 147.172px; left: 108.5px;"></span>
-               </a>
-            </div>
-         </div>
+         {% endfor %}
       </div>
    </div>
    <!-- If we need navigation buttons -->
@@ -373,81 +331,27 @@
          <img src="{% static 'imgs/services/service-topo.png' %}" alt="shape">
       </div>
       <div class="shape-bus">
-         <img src="{% static 'imgs/services/service-bus.png' %}" alt="shape">
+         <img src="{% static 'imgs/services/service-topo.png' %}" alt="shape">
       </div>
       <div class="container">
          <div class="swiper service-active-2">
             <div class="swiper-wrapper">
-               <!-- block -->
-               <div class="swiper-slide">
-                  <div class="service-main-box box-shadow-1">
-                     <div class="icon-area">
-                        <img src="{% static 'imgs/services/icon-1.png' %}" alt="icon">
-                        <span>01</span>
-                     </div>
-                     <h4><a href="service-details.html">Air freight</a></h4>
-                     <p>Providing legal advice, contract drafting, compliance assistance.</p>
-                     <div class="image-area p-relative">
-                        <a class="service-btn" href="service-details.html"><i class="icon-42"></i></a>
-                        <a class="w-img" href="service-details.html"><img src="{% static 'imgs/services/service-1.jpg' %}" alt="service-image"></a>
-                     </div>
-                  </div>
-               </div>
-               <!-- block -->
-               <div class="swiper-slide">
-                  <div class="service-main-box box-shadow-1">
-                     <div class="icon-area">
-                        <img src="{% static 'imgs/services/icon-2.png' %}" alt="icon">
-                        <span>02</span>
-                     </div>
-                     <h4><a href="service-details.html">Road service</a></h4>
-                     <p>Providing legal advice, contract drafting, compliance assistance.</p>
-                     <div class="image-area p-relative">
-                        <a class="service-btn" href="service-details.html"><i class="icon-42"></i></a>
-                        <a class="w-img" href="service-details.html"><img src="{% static 'imgs/services/service-2.jpg' %}" alt="service-image"></a>
+               {% for i in services %}
+                  <div class="swiper-slide">
+                     <div class="service-main-box box-shadow-1">
+                        <div class="icon-area">
+                           <img src="{{ i.svg.url }}" alt="icon">
+                           <span>{{ forloop.counter }}</span>
+                        </div>
+                        <h4><a href="service-details.html">{{ i.title }}</a></h4>
+                        <p>{{ i.description }}</p>
+                        <div class="image-area p-relative">
+                           <a class="service-btn" href="service-details.html"><i class="icon-42"></i></a>
+                           <a class="w-img" href="service-details.html"><img src="{{ i.image.url }}" alt="service-image"></a>
+                        </div>
                      </div>
                   </div>
-               </div>
-               <!-- block -->
-               <div class="swiper-slide">
-                  <div class="service-main-box box-shadow-1">
-                     <div class="icon-area">
-                        <img src="{% static 'imgs/services/icon-3.png' %}" alt="icon">
-                        <span>03</span>
-                     </div>
-                     <h4><a href="service-details.html">Ocean Freight</a></h4>
-                     <p>Providing legal advice, contract drafting, compliance assistance.</p>
-                     <div class="image-area p-relative">
-                        <a class="service-btn" href="service-details.html"><i class="icon-42"></i></a>
-                        <a class="w-img" href="service-details.html"><img src="{% static 'imgs/services/service-3.jpg' %}" alt="service-image"></a>
-                     </div>
-                  </div>
-               </div>
-               <!-- block -->
-               <div class="swiper-slide">
-                  <div class="service-main-box box-shadow-1">
-                     <div class="icon-area">
-                        <img src="{% static 'imgs/services/icon-4.png' %}" alt="icon">
-                        <span>04</span>
-                     </div>
-                     <h4><a href="service-details.html">Warehousing</a></h4>
-                     <p>Providing legal advice, contract drafting, compliance assistance.</p>
-                     <div class="image-area p-relative">
-                        <a class="service-btn" href="service-details.html"><i class="icon-42"></i></a>
-                        <a class="w-img" href="service-details.html"><img src="{% static 'imgs/services/service-4.jpg' %}" alt="service-image"></a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="bottom-image section-space-top">
-         <div class="row">
-            <div class="col-lg-8">
-               <figure class="image w-img">
-                  <img src="{% static 'imgs/about/about-2.jpg' %}" alt="service-image-1">
-                  <img src="{% static 'imgs/about/about-2.jpg' %}" alt="service-image-2">
-               </figure>
+               {% endfor %}
             </div>
          </div>
       </div>
@@ -462,8 +366,8 @@
                <div class="about-3-content pr-100">
                   <div class="title-box wow mb-40 fadeInRight" data-wow-delay="500ms">
                      <h5 class="section-sub-title">About Us</h5>
-                     <h2 class="section-title mb-20">Safe & Reliable Cargo Solutions</h2>
-                     <p>Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. Phasellus nec odio orci. Nunc id massa ante. Suspendisse sit amet neque euismod, convallis quam eget, dignissim massa. Aliquam blandit risus purus, in congue nunc venenatis id.  </p>
+                     <h2 class="section-title mb-20">{{ about.title }}</h2>
+                     <p>{{ about.description }}</p>
                   </div>
                   <div class="list-area">
                      <ul>
@@ -488,13 +392,10 @@
                      <img src="{% static 'imgs/about/about-6.jpg' %}" alt="about-image-2">
                   </figure>
                   <div class="about-2-counter three" data-background="assets/imgs/about/about-circle.png">
-                     <h1 class="counter">10</h1>
+                     <h1 class="counter">{{ about.years }}</h1>
                      <h4>Years</h4>
                      <h4><span>Experience</span></h4>
                   </div>
-                  <figure class="image-three">
-                     <img src="{% static 'imgs/about/about-car-1.png' %}" alt="about-image-3">
-                  </figure>
                </div>
             </div>
          </div>
@@ -503,13 +404,7 @@
    <!-- About area end -->
 
    <!-- Request Form area start -->
-   <section class="request-form-section section-space-top p-relative" data-background="{% static 'imgs/form/req-1.jpg' %}">
-      <div class="truck">
-         <img src="{% static 'imgs/form/req-truck.png' %}" alt="truck">
-      </div>
-      <div class="box">
-         <img src="{% static 'imgs/form/req-box.png' %}" alt="box">
-      </div>
+   <section class="request-form-section section-space-top p-relative" data-background="{{ images.quote_background.url }}">
       <div class="shape" data-background="assets/imgs/form/req-shape.png"></div>
       <div class="container">
          <div class="row">
@@ -807,7 +702,7 @@
                   <div class="title-box wow fadeInRight" data-wow-delay="500ms">
                      <h5 class="section-sub-title">Client Reviews</h5>
                      <h2 class="section-title">Turning Challenges Into Shipments</h2>
-                     <p class="pt-30 pb-30">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                     <p class="pt-30 pb-30">some of the Reviews on our shipments that we have received</p>
                   </div>
                   <!-- If we need navigation buttons -->
                   <div class="testimonials-3-navigation-wrapper position-relative">
@@ -821,75 +716,30 @@
             <div class="col-lg-6">
                <div class="swiper testimonial-2-active">
                   <div class="swiper-wrapper">
-                        <!-- block -->
-                     <div class="swiper-slide">
-                        <div class="testimonials-area is-black">
-                           <div class="quote-icon"><i class="icon-25"></i></div>
-                           <div class="author-area">
-                              <figure class="image">
-                                 <img src="{% static 'imgs/resources/author-1.jpg' %}" alt="author">
-                              </figure>
-                              <div class="author-info">
-                                 <h4>Jane Cooper</h4>
-                                 <span>Transportation Specialist</span>
-                                 <ul class="ratings">
-                                    <li class="fas fa-star"></li>
-                                    <li class="fas fa-star"></li>
-                                    <li class="fas fa-star"></li>
-                                    <li class="fas fa-star"></li>
-                                    <li class="fas fa-star"></li>
-                                 </ul>
+                     {% for i in reviews %}
+                        <div class="swiper-slide">
+                           <div class="testimonials-area is-black">
+                              <div class="quote-icon"><i class="icon-25"></i></div>
+                              <div class="author-area">
+                                 <figure class="image">
+                                    <img src="{{ i.image.url }}" alt="author">
+                                 </figure>
+                                 <div class="author-info">
+                                    <h4>{{ i.name }}</h4>
+                                    <span>Transportation Specialist</span>
+                                    <ul class="ratings">
+                                       <li class="fas fa-star"></li>
+                                       <li class="fas fa-star"></li>
+                                       <li class="fas fa-star"></li>
+                                       <li class="fas fa-star"></li>
+                                       <li class="fas fa-star"></li>
+                                    </ul>
+                                 </div>
                               </div>
+                              <p>“{{ i.description }}”</p>
                            </div>
-                           <p>“ Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. Phasellus nec odio orci. Nunc id massa ante. ”</p>
                         </div>
-                     </div>
-                        <!-- block -->
-                     <div class="swiper-slide">
-                        <div class="testimonials-area is-black">
-                           <div class="quote-icon"><i class="icon-25"></i></div>
-                           <div class="author-area">
-                              <figure class="image">
-                                 <img src="{% static 'imgs/resources/author-2.jpg' %}" alt="author">
-                              </figure>
-                              <div class="author-info">
-                                 <h4>Hanga Moye</h4>
-                                 <span>Transportation Specialist</span>
-                                 <ul class="ratings">
-                                    <li class="fas fa-star"></li>
-                                    <li class="fas fa-star"></li>
-                                    <li class="fas fa-star"></li>
-                                    <li class="fas fa-star"></li>
-                                    <li class="fas fa-star"></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <p>“ Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. Phasellus nec odio orci. Nunc id massa ante. ”</p>
-                        </div>
-                     </div>
-                        <!-- block -->
-                     <div class="swiper-slide">
-                        <div class="testimonials-area is-black">
-                           <div class="quote-icon"><i class="icon-25"></i></div>
-                           <div class="author-area">
-                              <figure class="image">
-                                 <img src="{% static 'imgs/resources/author-1.jpg' %}" alt="author">
-                              </figure>
-                              <div class="author-info">
-                                 <h4>Jane Cooper</h4>
-                                 <span>Transportation Specialist</span>
-                                 <ul class="ratings">
-                                    <li class="fas fa-star"></li>
-                                    <li class="fas fa-star"></li>
-                                    <li class="fas fa-star"></li>
-                                    <li class="fas fa-star"></li>
-                                    <li class="fas fa-star"></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <p>“ Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. Phasellus nec odio orci. Nunc id massa ante. ”</p>
-                        </div>
-                     </div>
+                     {% endfor %}
                   </div>
                </div>
             </div>
@@ -899,26 +749,20 @@
    <!-- testimonials area end -->
 
    <!-- video and faq area start -->
-   <section class="videos-and-faq p-relative" data-background="{% static 'imgs/resources/video-bg-1.jpg' %}">
+   <section class="videos-and-faq p-relative" data-background="{{ images.ask_question_background.url }}">
       <div class="shape-1">
          <img src="{% static 'imgs/resources/video-dot.png' %}" alt="video-shape-1">
-      </div>
-      <div class="shape-2">
-         <img src="{% static 'imgs/resources/video-plane.png' %}" alt="video-shape-2">
-      </div>
-      <div class="shape-3">
-         <img src="{% static 'imgs/resources/video-topo.png' %}" alt="video-shape-3">
       </div>
       <div class="vf-bg-white"></div>
       <div class="container">
          <div class="videos-and-faq-1 p-relative z-0">
             <figure class="image w-img">
-               <img src="{% static 'imgs/resources/video-bg.jpg' %}" alt="video-image">
-               <img src="{% static 'imgs/resources/video-bg.jpg' %}" alt="video-image">
+               <img src="{{ video.image.url }}" alt="video-image">
+               <img src="{{ video.image.url }}" alt="video-image">
             </figure>
             <div class="play-btn">
                <div class="video_player_btn">
-                  <a href="https://www.youtube.com/watch?v=eEzD-Y97ges" class="popup-video"><i class="icon-43"></i></a>
+                  <a href="{{ video.link }}" class="popup-video"><i class="icon-43"></i></a>
               </div>
             </div>
          </div>
@@ -1011,53 +855,25 @@
    <!-- video and faq area end -->
 
    <!-- work process area start -->
-   <section class="work-process-section text-center section-space-top p-relative" data-background="{% static 'imgs/resources/process-bg-map.png' %}">
+   <section class="work-process-section text-center section-space-top p-relative" data-background="{{ images.process_background.url }}">
       <div class="container">
          <div class="title-box wow mb-60 text-center fadeInRight" data-wow-delay="500ms">
             <h5 class="section-sub-title">Our Process</h5>
-            <h2 class="section-title">How It Work</h2>
+            <h2 class="section-title">How It Works</h2>
          </div>
-         <div class="row g-4">
-            <div class="col-lg-3 col-md-6 mb-15">
-               <div class="work-process-box">
-                  <div class="inner">
-                     <div class="icon-box">
-                        <i class="icon-15"></i>
+         <div class="row justify-content-center">
+            {% for i in process %}
+               <div class="col-lg-2 col-md-2 mb-15">
+                  <div class="work-process-box">
+                     <div class="inner">
+                        <div class="icon-box">
+                           <img src="{{ i.svg.url }}" alt="icon">
+                        </div>
+                        <h5>{{ i.title }}</h5>
                      </div>
-                     <h5>Received your product </h5>
                   </div>
                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-15">
-               <div class="work-process-box">
-                  <div class="inner">
-                     <div class="icon-box">
-                        <i class="icon-16"></i>
-                     </div>
-                     <h5>Warehousing product</h5>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-15">
-               <div class="work-process-box">
-                  <div class="inner">
-                     <div class="icon-box">
-                        <i class="icon-17"></i>
-                     </div>
-                     <h5>Send The Product </h5>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-15">
-               <div class="work-process-box">
-                  <div class="inner">
-                     <div class="icon-box">
-                        <i class="icon-18"></i>
-                     </div>
-                     <h5>Package has been delivered </h5>
-                  </div>
-               </div>
-            </div>
+            {% endfor %}
          </div>
       </div>
    </section>
@@ -1188,7 +1004,7 @@
                      </div>
                      <div class="content">
                         <span>E-mail Us</span>
-                        <h5><a href="mailto:kenzi.lawson@example.com">kenzi.lawson@example.com</a></h5>
+                        <h5><a href="mailto:kenzi.lawson@example.com">{{ companys.email }}</a></h5>
                      </div>
                   </div>
                   <div class="icon-box">
@@ -1197,7 +1013,7 @@
                      </div>
                      <div class="content">
                         <span>Head Office Address:</span>
-                        <h5><a href="#">2972 Westheimer Rd. Santa Ana, Illinois 85486 </a></h5>
+                        <h5><a href="#">{{ companys.address }}</a></h5>
                      </div>
                   </div>
                   <div class="icon-box">
@@ -1206,7 +1022,7 @@
                      </div>
                      <div class="content">
                         <span>Support   24/7</span>
-                        <h5><a href="tel:+1234578910">+123 45789 10</a></h5>
+                        <h5><a href="tel:+1234578910">{{ companys.phone }}</a></h5>
                      </div>
                   </div>
                </div>
