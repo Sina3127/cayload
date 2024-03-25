@@ -30,11 +30,3 @@ class Home(TemplateView):
             'instagram': instagram
         }
         return render(request, self.template_name, context)
-class Tracker(TemplateView):
-    template_name = 'tracker.html'
-
-    def get(self, request, *args, **kwargs):
-        context = {
-
-        }
-        return render(request, "home/tracker.html", context)

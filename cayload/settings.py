@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'home',
     'ckeditor',
     'ckeditor_uploader',
+    'track',
 ]
 
 MIDDLEWARE = [
