@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
-from home.models import Company, Instagram
+from home.models import Company, Instagram, Images
 from track.models import Track
 
 
@@ -10,10 +10,12 @@ class Tracker(TemplateView):
 
     def get(self, request, *args, **kwargs):
         companys = Company.objects.last()
+        images = Images.objects.last()
         instagram = Instagram.objects.all()
 
         context = {
             'companys': companys,
+            'images': images,
             'instagram': instagram
         }
 
@@ -34,11 +36,13 @@ class Tracker(TemplateView):
             track = None
 
         companys = Company.objects.last()
+        images = Images.objects.last()
         instagram = Instagram.objects.all()
 
         context = {
             'track': track,
             'companys': companys,
+            'images': images,
             'instagram': instagram
         }
         return render(request, "track/results.html", context)

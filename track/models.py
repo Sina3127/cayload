@@ -20,5 +20,6 @@ class Track(models.Model):
     arrival_to_final_destination = models.DateField()
     date_of_arriving_to_warehouse = models.DateField()
     pick_up_date_of_warehouse = models.DateField()
-    release_status = models.CharField(max_length=100)
+    steam_release_status = models.CharField(max_length=100)
     delivery_status = models.CharField(max_length=100)
+    customs_release_status = models.CharField(max_length=100, null=True, blank=True)

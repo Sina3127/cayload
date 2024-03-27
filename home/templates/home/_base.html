@@ -1,0 +1,421 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="zxx">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>cayload</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/favicon.svg">
+   <!-- CSS here -->
+   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+   <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+   <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+   <link rel="stylesheet" href="{% static 'css/fontawesome-pro.css' %}">
+   <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+   <link rel="stylesheet" href="{% static 'css/spacing.css' %}">
+   <link rel="stylesheet" href="{% static 'css/sweetalert2.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+   <link rel="stylesheet" href="{% static 'css/nouislider.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/nouislider.pips.css' %}">
+   <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+
+   <!-- preloader start -->
+<!--   <div id="preloader">-->
+<!--      <div class="vw-loader-inner">-->
+<!--         <div class="vw-loader">-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--            <span class="vw-loader-item"></span>-->
+<!--         </div>-->
+<!--      </div>-->
+<!--   </div>-->
+   <!-- preloader start -->
+
+
+   <!-- Back to top start -->
+   <div class="backtotop-wrap cursor-pointer">
+      <svg class="backtotop-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <!-- Back to top end -->
+
+   <!-- search area start -->
+   <div class="vw-search-area">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-12">
+               <div class="vw-search-form">
+                  <div class="vw-search-close text-center mb-20">
+                     <button class="vw-search-close-btn vw-search-close-btn"></button>
+                  </div>
+                  <form action="#">
+                     <div class="vw-search-input mb-10">
+                        <input type="text" placeholder="Search for product...">
+                        <button type="submit"><i class="flaticon-search-1"></i></button>
+                     </div>
+                     <div class="vw-search-category">
+                        <span>Search by : </span>
+                        <a href="#">Agency, </a>
+                        <a href="#">Artist Portfolio, </a>
+                        <a href="#">Branding, </a>
+                        <a href="#">creative portfolio, </a>
+                        <a href="#">Design </a>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+   <!-- search area end -->
+
+   <!-- Offcanvas area start -->
+   <div class="fix">
+      <div class="offcanvas__info">
+         <div class="offcanvas__wrapper">
+            <div class="offcanvas__content">
+               <div class="offcanvas__top mb-10 d-flex justify-content-between align-items-center">
+                  <div class="offcanvas__logo">
+                     <a href="index.html">
+                        <img src="assets/imgs/logo/logo-white.svg" alt="Header Logo">
+                     </a>
+                  </div>
+                  <div class="offcanvas__close">
+                     <button>
+                        <i class="fal fa-times"></i>
+                     </button>
+                  </div>
+               </div>
+               <div class="offcanvas__search mb-25">
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum maxime accusamus corrupti natus obcaecati vitae dignissimos, id officiis similique eos.</p>
+               </div>
+               <div class="mobile-menu fix mb-40"></div>
+               <div class="offcanvas__contact mb-20">
+                  <h4>Contact Info</h4>
+                  <ul>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="fal fa-map-marker-alt"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a target="_blank"
+                              href="#">31 Park End St, Brockhampton, UK</a>
+                        </div>
+                     </li>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="far fa-phone"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a href="tel:+00112233665">+00112233665</a>
+                        </div>
+                     </li>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="fal fa-envelope"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a href="tel:+012-345-6789"><span class="mailto:support@example.com">support@example.com</span></a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="offcanvas__social">
+                  <ul>
+                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="offcanvas__overlay"></div>
+   <div class="offcanvas__overlay-white"></div>
+   <!-- Offcanvas area start -->
+
+   <!-- Header area start -->
+   <header class="header-three p-relative">
+      <div id="header-sticky" class="header-area">
+         <div class="header-box-main">
+            <div class="header-top pt-15 pb-15 bg-color-1">
+               <div class="container">
+                  <div class="header-info">
+                     <ul class="d-flex">
+                        <li><i class="icon-48"></i>{{ companys.address }}</li>
+                        <li><i class="icon-2"></i>{{ companys.email }}</li>
+                        <li><i class="icon-3"></i>{{ companys.work_time }}</li>
+                     </ul>
+                  </div>
+                  <div class="socials-info">
+                     <span>Social Network :</span>
+                     <ul class="d-flex">
+                        <li><a href="{{ companys.facebook }}"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="{{ companys.instagram }}"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="{{ companys.linkedin }}"><i class="fab fa-twitter"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="mega-menu-wrapper">
+                  <div class="header-main">
+                     <div class="header-left">
+                        <div class="header-logo">
+                           <a href="{% url 'home' %}">
+                           <img src="{{ companys.logo.url }}" alt="header logo">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="header-middle">
+                        <div class="mean__menu-wrapper d-none d-lg-block">
+                           <div class="main-menu">
+                              <nav id="mobile-menu">
+                                 <ul>
+                                    <li>
+                                       <a href="{% url 'home' %}">Home</a>
+                                    </li>
+                                    <li>
+                                       <a href="{% url 'about' %}">About</a>
+                                    </li>
+                                    <li>
+                                       <a href="{% url 'service' %}">Service</a>
+                                    </li>
+                                       <a href="{% url 'contact' %}">Contact</a>
+                                    </li>
+                                 </ul>
+                              </nav>
+                              <!-- for wp -->
+                              <div class="header__hamburger ml-50 d-none">
+                                 <button type="button" class="hamburger-btn offcanvas-open-btn">
+                                 <span>01</span>
+                                 <span>01</span>
+                                 <span>01</span>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="header-right d-flex justify-content-end">
+                        <div class="header-action d-xl-inline-flex d-none gap-5">
+                           <div class="header-call-us-3">
+                              <a href="{% url 'tracker' %}">
+                                 <button type="button" class="btn btn-success">Track your order</button>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="header__hamburger d-lg-none d-inline-flex">
+                           <div class="sidebar__toggle">
+                              <a class="bar-icon" href="javascript:void(0)">
+                              <span></span>
+                              <span>
+                              <small></small>
+                              </span>
+                              <span></span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- Header area end -->
+
+
+ <main>
+   <div class="page-wrapper">
+       {% block content %}
+       {% endblock content %}
+   </div><!-- page-wrapper -->
+ </main>
+
+
+   <!-- Footer area start -->
+   <footer>
+      <div class="footer-main p-relative">
+         <div class="shape-bottom" data-background="assets/imgs/footer/footer-4.png"></div>
+         <div class="footer-wrapper two bg-color-4">
+            <div class="container">
+               <div class="footer-top p-relative">
+                  <div class="icon-box">
+                     <div class="icon-area">
+                        <i class="icon-27"></i>
+                     </div>
+                     <div class="content">
+                        <span>E-mail Us</span>
+                        <h5><a href="mailto:kenzi.lawson@example.com">{{ companys.email }}</a></h5>
+                     </div>
+                  </div>
+                  <div class="icon-box">
+                     <div class="icon-area">
+                        <i class="icon-28"></i>
+                     </div>
+                     <div class="content">
+                        <span>Head Office Address:</span>
+                        <h5><a href="#">{{ companys.address }}</a></h5>
+                     </div>
+                  </div>
+                  <div class="icon-box">
+                     <div class="icon-area">
+                        <i class="icon-29"></i>
+                     </div>
+                     <div class="content">
+                        <span>Support   24/7</span>
+                        <h5><a href="tel:+1234578910">{{ companys.phone }}</a></h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer-middle pt-60 pb-50">
+                  <div class="row">
+                     <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget one p-relative">
+                           <div class="footer-logo">
+                              <a href="{% url 'home' %}"><img src="{{ companys.logo.url }}" alt="footer-logo"></a>
+                           </div>
+                           <p class="pt-30 pb-20">{{ footer.text }}</p>
+                           <ul class="footer-socials-icon">
+                              <li><a href="#"><i class="icon-20"></i></a></li>
+                              <li><a href="#"><i class="icon-19"></i></a></li>
+                              <li><a href="#"><i class="icon-21"></i></a></li>
+                              <li><a href="#"><i class="icon-30"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget two pl-50">
+                           <h5 class="footer-title p-relative">Industry Served </h5>
+                           <ul class="footer-menu">
+                              <li><a href="services.html">Warehousing</a></li>
+                              <li><a href="services.html">Cargo Freight </a></li>
+                              <li><a href="services.html">Ocean Freight</a></li>
+                              <li><a href="services.html">Automobile</a></li>
+                              <li><a href="services.html">Export Import</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget two pl-50">
+                           <h5 class="footer-title p-relative">Company Info </h5>
+                             <ul class="footer-menu">
+                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="services.html">Services </a></li>
+                              <li><a href="projects.html">Projects</a></li>
+                              <li><a href="blog-details.html">Blog</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget two">
+                           <h5 class="footer-title p-relative">Instagram </h5>
+                           <div class="footer-gallery">
+                              <div class="image-area p-relative">
+                                 <a class="popup-image" href="{% static 'imgs/footer/insta-1.png' %}">
+                                    <img src="{% static 'imgs/footer/insta-1.png' %}" alt="footer-image">
+                                    <i class="fab fa-instagram"></i>
+                                 </a>
+                              </div>
+                              <div class="image-area p-relative">
+                                 <a class="popup-image" href="{% static 'imgs/footer/insta-2.png' %}">
+                                    <img src="{% static 'imgs/footer/insta-2.png' %}" alt="footer-image">
+                                    <i class="fab fa-instagram"></i>
+                                 </a>
+                              </div>
+                              <div class="image-area p-relative">
+                                 <a class="popup-image" href="{% static 'imgs/footer/insta-3.png' %}">
+                                    <img src="{% static 'imgs/footer/insta-3.png' %}" alt="footer-image">
+                                    <i class="fab fa-instagram"></i>
+                                 </a>
+                              </div>
+                              <div class="image-area p-relative">
+                                 <a class="popup-image" href="{% static 'imgs/footer/insta-4.png' %}">
+                                    <img src="{% static 'imgs/footer/insta-4.png' %}" alt="footer-image">
+                                    <i class="fab fa-instagram"></i>
+                                 </a>
+                              </div>
+                              <div class="image-area p-relative">
+                                 <a class="popup-image" href="{% static 'imgs/footer/insta-5.png' %}">
+                                    <img src="{% static 'imgs/footer/insta-5.png' %}" alt="footer-image">
+                                    <i class="fab fa-instagram"></i>
+                                 </a>
+                              </div>
+                              <div class="image-area p-relative">
+                                 <a class="popup-image" href="{% static 'imgs/footer/insta-6.png' %}">
+                                    <img src="{% static 'imgs/footer/insta-6.png' %}" alt="footer-image">
+                                    <i class="fab fa-instagram"></i>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer-bottom p-relative">
+                  <div class="footer-copyright">
+                     <span>© Copyright 2024 / All right reserved</span>
+                  </div>
+                  <div class="footer-terms">
+                     <ul>
+                        <li><a href="#">Privacy /</a></li>
+                        <li><a href="#"> Terms & Condition /</a></li>
+                        <li><a href="#">Site map /</a></li>
+                        <li><a href="#">Contact</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer area end -->
+
+
+
+
+   <!-- JS here -->
+   <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+   <script src="{% static 'js/waypoints.min.js' %}"></script>
+   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+   <script src="{% static 'js/meanmenu.min.js' %}"></script>
+   <script src="{% static 'js/swiper.min.js' %}"></script>
+   <script src="{% static 'js/slick.min.js' %}"></script>
+   <script src="{% static 'js/magnific-popup.min.js' %}"></script>
+   <script src="{% static 'js/counterup.js' %}"></script>
+   <script src="{% static 'js/wow.js' %}"></script>
+   <script src="{% static 'js/isotope.js' %}"></script>
+   <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+   <script src="{% static 'js/nouislider.min.js' %}"></script>
+   <!-- <script src="assets/js/sweetalert2.all.min.js"></script>
+   <script src="assets/js/email.min.js"></script>
+   <script>
+      emailjs.init('OSMhTkiX_rHIJgfeF')
+   </script>
+    <script src="assets/js/email-validation.js"></script> -->
+   <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

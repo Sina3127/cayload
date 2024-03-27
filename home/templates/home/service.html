@@ -1,0 +1,116 @@
+{% extends 'home/_base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Page title area start -->
+       <div class="breadcrumb__area bg-color-2 p-relative" data-background="{{ images.services_page_background.url }}">
+          <div class="container">
+             <div class="row">
+                <div class="col-12">
+                   <div class="breadcrumb__wrapper p-relative">
+                      <div class="breadcrumb__menu">
+                         <nav>
+                            <ul>
+                               <li><span><a href="index.html">Home</a></span></li>
+                               <li><span>Services One</span></li>
+                            </ul>
+                         </nav>
+                      </div>
+                      <h2 class="breadcrumb__title">Services</h2>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    <!-- Page title area end -->
+
+   <!-- Services area start -->
+   <section class="service-section style-2 p-relative">
+      <div class="shape-topo">
+         <img src="{% static 'imgs/services/service-topo.png' %}" alt="shape">
+      </div>
+      <div class="shape-bus">
+         <img src="{% static 'imgs/services/service-topo.png' %}" alt="shape">
+      </div>
+      <div class="container">
+         <div class="swiper service-active-2">
+            <div class="swiper-wrapper">
+               {% for i in services %}
+                  <div class="swiper-slide">
+                     <div class="service-main-box box-shadow-1">
+                        <div class="icon-area">
+                           <img src="{{ i.svg.url }}" alt="icon">
+                           <span>{{ forloop.counter }}</span>
+                        </div>
+                        <h4><a href="service-details.html">{{ i.title }}</a></h4>
+                        <p>{{ i.description }}</p>
+                        <div class="image-area p-relative">
+                           <a class="service-btn" href="service-details.html"><i class="icon-42"></i></a>
+                           <a class="w-img" href="service-details.html"><img src="{{ i.image.url }}" alt="service-image"></a>
+                        </div>
+                     </div>
+                  </div>
+               {% endfor %}
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Services area end -->
+
+   <!-- testimonials area start -->
+   <section class="testimonials-3-section section-space p-relative">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-6">
+               <div class="testimonials-3-content-area pr-160">
+                  <div class="title-box wow fadeInRight" data-wow-delay="500ms">
+                     <h5 class="section-sub-title">Client Reviews</h5>
+                     <h2 class="section-title">Turning Challenges Into Shipments</h2>
+                     <p class="pt-30 pb-30">some of the Reviews on our shipments that we have received</p>
+                  </div>
+                  <!-- If we need navigation buttons -->
+                  <div class="testimonials-3-navigation-wrapper position-relative">
+                     <div class="common-slider-navigation">
+                        <button class="testimonial-2-button-prev"><i class="fal fa-arrow-left-long"></i></button>
+                        <button class="testimonial-2-button-next"><i class="fal fa-arrow-right-long"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6">
+               <div class="swiper testimonial-2-active">
+                  <div class="swiper-wrapper">
+                     {% for i in reviews %}
+                        <div class="swiper-slide">
+                           <div class="testimonials-area is-black">
+                              <div class="quote-icon"><i class="icon-25"></i></div>
+                              <div class="author-area">
+                                 <figure class="image">
+                                    <img src="{{ i.image.url }}" alt="author">
+                                 </figure>
+                                 <div class="author-info">
+                                    <h4>{{ i.name }}</h4>
+                                    <span>Transportation Specialist</span>
+                                    <ul class="ratings">
+                                       <li class="fas fa-star"></li>
+                                       <li class="fas fa-star"></li>
+                                       <li class="fas fa-star"></li>
+                                       <li class="fas fa-star"></li>
+                                       <li class="fas fa-star"></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <p>“{{ i.description }}”</p>
+                           </div>
+                        </div>
+                     {% endfor %}
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- testimonials area end -->
+
+{% endblock content %}

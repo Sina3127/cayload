@@ -1,0 +1,103 @@
+{% extends 'home/_base.html' %}
+{% load static %}
+
+{% block content %}
+   <!-- Page title area start -->
+      <div class="breadcrumb__area bg-color-2 p-relative" data-background="{{ images.about_page_background.url }}">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="breadcrumb__wrapper p-relative">
+                     <div class="breadcrumb__menu">
+                        <nav>
+                           <ul>
+                              <li><span><a href="index.html">Home</a></span></li>
+                              <li><span>About Us</span></li>
+                           </ul>
+                        </nav>
+                     </div>
+                     <h2 class="breadcrumb__title">About Us</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   <!-- Page title area end -->
+
+   <!-- About area start -->
+   <section class="about-3-section p-relative section-space bg-color-2">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="about-3-content pr-100">
+                     <div class="title-box wow mb-40 fadeInRight" data-wow-delay="500ms">
+                        <h5 class="section-sub-title">About Us</h5>
+                        <h2 class="section-title mb-20">{{ about.title }}</h2>
+                        <p>{{ about.description }}</p>
+                     </div>
+                     <div class="list-area">
+                        <ul>
+                           <li>Safe Packing</li>
+                           <li>Ship Everywhere</li>
+                           <li>Fastest Shipping</li>
+                        </ul>
+                        <ul>
+                           <li>In Time Delivery</li>
+                           <li>Cost Saving</li>
+                           <li>Zero Risk</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="about-3-image-area p-relative pt-90">
+                     <figure class="image-one">
+                        <img src="{% static 'imgs/about/about-5.jpg' %}" alt="about-image-1">
+                     </figure>
+                     <figure class="image-two">
+                        <img src="{% static 'imgs/about/about-6.jpg' %}" alt="about-image-2">
+                     </figure>
+                     <div class="about-2-counter three" data-background="assets/imgs/about/about-circle.png">
+                        <h1 class="counter">{{ about.years }}</h1>
+                        <h4>Years</h4>
+                        <h4><span>Experience</span></h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   <!-- About area end -->
+
+   <!-- Counter area Start -->
+   <section class="counter-section section-space">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-4">
+               <div class="title-box wow mb-20 fadeInRight" data-wow-delay="1500ms">
+                  <h5 class="section-sub-title">Deliver cargo from</h5>
+                  <h2 class="section-title">{{ about.countries }}</h2>
+               </div>
+            </div>
+            <div class="col-lg-8">
+               <div class="counter-area">
+                  <div class="counter-box fadeInDown" data-wow-delay="1000ms">
+                     <h3><span class="counter">{{ about.annually_tons_of_cargo }}</span></h3>
+                     <h5>Annually tons of cargo</h5>
+                  </div>
+                  <div class="counter-box fadeInDown" data-wow-delay="1500ms">
+                     <h3><span class="counter">{{ about.delivery_cities }}</span>+</h3>
+                     <h5>Delivery cities</h5>
+                  </div>
+                  <div class="counter-box fadeInDown" data-wow-delay="2000ms">
+                     <h3><span class="counter">{{ about.completed_orders }}</span></h3>
+                     <h5>completed orders over</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Counter area end -->
+
+{% endblock content %}

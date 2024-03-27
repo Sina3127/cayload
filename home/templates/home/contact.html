@@ -1,0 +1,73 @@
+{% extends 'home/_base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Page title area start -->
+   <div class="breadcrumb__area bg-color-2 p-relative" data-background="{{ images.contact_page_background.url }}">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="breadcrumb__wrapper p-relative">
+                  <div class="breadcrumb__menu">
+                     <nav>
+                        <ul>
+                           <li><span><a href="index.html">Home</a></span></li>
+                           <li><span>Contact</span></li>
+                        </ul>
+                     </nav>
+                  </div>
+                  <h2 class="breadcrumb__title">Contact</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+<!-- Page title area end -->
+
+
+<section class="contact-page-section section-space">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-6">
+            <div class="contact-page-info-area pl-80">
+               <div class="title-box mb-30 wow fadeInRight" data-wow-delay="1500ms">
+                  <h2 class="section-title mb-20">Feel free to write</h2>
+                  <p>Mauris non dignissim purus, ac commodo diam. Donec sitamet lacinia nulla. Aliquam quis purus in justo pulvinar tempor. Aliquam tellusnulla, sollicitudin at euismod nec.</p>
+               </div>
+               <div class="contact-icon-box">
+                  <div class="icon-box">
+                     <i class="icon-46"></i>
+                  </div>
+                  <div class="content">
+                     <h4>Have any question?</h4>
+                     <span>Free : </span>
+                     <a href="tel:(406)555-0120">{{ companys.phone }}</a>
+                  </div>
+               </div>
+               <div class="contact-icon-box">
+                  <div class="icon-box">
+                     <i class="icon-47"></i>
+                  </div>
+                  <div class="content">
+                     <h4>Write email</h4>
+                     <span>Email: </span>
+                     <a href="mailto:tim.jennings@example.com">{{ companys.email }}</a>
+                  </div>
+               </div>
+               <div class="contact-icon-box">
+                  <div class="icon-box">
+                     <i class="icon-48"></i>
+                  </div>
+                  <div class="content">
+                     <h4>Visit anytime</h4>
+                     <span>Address: </span>
+                     <a href="https://maps.app.goo.gl/yQLW4ejK23EDobHs5" target="_blank">{{ companys.address }}</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+{% endblock content %}
