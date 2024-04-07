@@ -37,14 +37,14 @@
                      </div>
                      <div class="list-area">
                         <ul>
-                           <li>Safe Packing</li>
-                           <li>Ship Everywhere</li>
-                           <li>Fastest Shipping</li>
+                           <li>FCL</li>
+                           <li>LCL</li>
+                           <li>Air Freight</li>
                         </ul>
                         <ul>
-                           <li>In Time Delivery</li>
-                           <li>Cost Saving</li>
-                           <li>Zero Risk</li>
+                           <li>Warehousing</li>
+                           <li>Customs Cleaning</li>
+                           <li>Pickup and Delivery</li>
                         </ul>
                      </div>
                   </div>
@@ -52,10 +52,10 @@
                <div class="col-lg-6">
                   <div class="about-3-image-area p-relative pt-90">
                      <figure class="image-one">
-                        <img src="{% static 'imgs/about/about-5.jpg' %}" alt="about-image-1">
+                        <img src="{{ about.image_1.url }}" alt="about-image-1">
                      </figure>
                      <figure class="image-two">
-                        <img src="{% static 'imgs/about/about-6.jpg' %}" alt="about-image-2">
+                        <img src="{{ about.image_2.url }}" alt="about-image-2">
                      </figure>
                      <div class="about-2-counter three" data-background="assets/imgs/about/about-circle.png">
                         <h1 class="counter">{{ about.years }}</h1>

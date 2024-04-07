@@ -57,6 +57,7 @@ class Images(models.Model):
 
 class Instagram(models.Model):
     image = models.ImageField(upload_to='uploads/')
+    url = models.CharField(max_length=400, null=True, blank=True)
 
 class Footer(models.Model):
     text = models.CharField(max_length=200)

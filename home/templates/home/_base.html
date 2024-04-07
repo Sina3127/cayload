@@ -308,11 +308,11 @@
                         <div class="footer-widget two pl-50">
                            <h5 class="footer-title p-relative">Industry Served </h5>
                            <ul class="footer-menu">
-                              <li><a href="services.html">Warehousing</a></li>
-                              <li><a href="services.html">Cargo Freight </a></li>
-                              <li><a href="services.html">Ocean Freight</a></li>
-                              <li><a href="services.html">Automobile</a></li>
-                              <li><a href="services.html">Export Import</a></li>
+                              <li><p href="services.html">Warehousing</p></li>
+                              <li><p href="services.html">Cargo Freight </p></li>
+                              <li><p href="services.html">Ocean Freight</p></li>
+                              <li><p href="services.html">Automobile</p></li>
+                              <li><p href="services.html">Export Import</p></li>
                            </ul>
                         </div>
                      </div>
@@ -320,11 +320,9 @@
                         <div class="footer-widget two pl-50">
                            <h5 class="footer-title p-relative">Company Info </h5>
                              <ul class="footer-menu">
-                              <li><a href="about.html">About Us</a></li>
-                              <li><a href="services.html">Services </a></li>
-                              <li><a href="projects.html">Projects</a></li>
-                              <li><a href="blog-details.html">Blog</a></li>
-                              <li><a href="contact.html">Contact</a></li>
+                              <li><a href="{% url 'about' %}">About Us</a></li>
+                              <li><a href="{% url 'service' %}">Services </a></li>
+                              <li><a href="{% url 'contact' %}">Contact</a></li>
                            </ul>
                         </div>
                      </div>
@@ -332,42 +330,14 @@
                         <div class="footer-widget two">
                            <h5 class="footer-title p-relative">Instagram </h5>
                            <div class="footer-gallery">
-                              <div class="image-area p-relative">
-                                 <a class="popup-image" href="{% static 'imgs/footer/insta-1.png' %}">
-                                    <img src="{% static 'imgs/footer/insta-1.png' %}" alt="footer-image">
-                                    <i class="fab fa-instagram"></i>
-                                 </a>
-                              </div>
-                              <div class="image-area p-relative">
-                                 <a class="popup-image" href="{% static 'imgs/footer/insta-2.png' %}">
-                                    <img src="{% static 'imgs/footer/insta-2.png' %}" alt="footer-image">
-                                    <i class="fab fa-instagram"></i>
-                                 </a>
-                              </div>
-                              <div class="image-area p-relative">
-                                 <a class="popup-image" href="{% static 'imgs/footer/insta-3.png' %}">
-                                    <img src="{% static 'imgs/footer/insta-3.png' %}" alt="footer-image">
-                                    <i class="fab fa-instagram"></i>
-                                 </a>
-                              </div>
-                              <div class="image-area p-relative">
-                                 <a class="popup-image" href="{% static 'imgs/footer/insta-4.png' %}">
-                                    <img src="{% static 'imgs/footer/insta-4.png' %}" alt="footer-image">
-                                    <i class="fab fa-instagram"></i>
-                                 </a>
-                              </div>
-                              <div class="image-area p-relative">
-                                 <a class="popup-image" href="{% static 'imgs/footer/insta-5.png' %}">
-                                    <img src="{% static 'imgs/footer/insta-5.png' %}" alt="footer-image">
-                                    <i class="fab fa-instagram"></i>
-                                 </a>
-                              </div>
-                              <div class="image-area p-relative">
-                                 <a class="popup-image" href="{% static 'imgs/footer/insta-6.png' %}">
-                                    <img src="{% static 'imgs/footer/insta-6.png' %}" alt="footer-image">
-                                    <i class="fab fa-instagram"></i>
-                                 </a>
-                              </div>
+                              {% for i in instagram %}
+                                 <div class="image-area p-relative">
+                                    <a class="popup-image" href="{{ i.url }}">
+                                       <img src="{{ i.image.url }}" alt="footer-image">
+                                       <i class="fab fa-instagram"></i>
+                                    </a>
+                                 </div>
+                              {% endfor %}
                            </div>
                         </div>
                      </div>
